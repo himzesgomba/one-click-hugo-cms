@@ -1,0 +1,362 @@
+{{ define "main" }}
+
+<section id="ajanlat">
+    <div class="ajanlat-header">
+        <h3 class="section-title">Árajánlatkérés</h3>
+        <p>Egy munkanapon belül választ küldünk!</p>
+    </div>
+    <div class="contact-container">
+        <div class="contactForm">
+            <form action="https://formsubmit.co/ajanlat@himzesgomban.hu" method="POST">
+                <input type="hidden" name="_next" value="https://himzesgomba.github.io/himzesgomban_proba.github.io/index.arajanlat.k.html">
+                <h4>Ingyenes árajánlatkérés</h4>
+                <div class="inputBox">
+                    <input type="text" class="kerdo" name="nev" required="required">
+                    <span>Teljes név</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" class="kerdo" name="email" required="required">
+                    <span>Email-cím</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" class="kerdo" name="phone" required="required">
+                    <span>Telefonszám</span>
+                </div>
+                <div class="inputBox">
+                    <input type="radio" class="sajat" id="sajat" name="valasztas"><label for="sajat">Saját mintát szeretnék hímeztetni</label>
+                    <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek">A termékek közül szeretnék választani</label>
+                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
+                </div>
+                <div class="inputBox">
+                    <select class="option" name="szolgaltatas" id="egyebselect" multiple>
+                        <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        <option>Óvodai jel</option>
+                        <option>Házi áldás jászsági szűcshímzéses koszorúban (19x24,5cm)</option>
+                        <option>Házi áldás sárközi jegykendőmintával (19x24,5cm)</option>
+                        <option>Magyar címer fémarannyal hímezve, 5,5 cm</option>
+                        <option>Magyar címer fémarannyal hímezve, 7,5 cm</option>
+                        <option>Magyar címer fémarannyal hímezve, 10 cm</option>
+                        <option>Magyar címer fémarannyal hímezve, 14 cm</option>
+                        <option>Magyar címer fémarannyal hímezve, 25 cm</option>
+                        <option>Magyar címer aranysárga cérnával hímezve, 5,5 cm</option>
+                        <option>Magyar címer aranysárga cérnával hímezve, 7,5 cm</option>
+                        <option>Nagy-Magyarország, arany kontúrral, 8 cm</option>
+                        <option>Nagy-Magyarország, fekete kontúrral, 8 cm</option>
+                        <option>Nagy-Magyarország, rovásírással, fehér alapon, 7,5 cm</option>
+                        <option>Nagy-Magyarország, rovásírással, fekete alapon, 7,5 cm</option>
+                        <option>Nagy-Magyarország, Árpád-sávos, 7,5 cm</option>
+                        <option>Rakamazi turul, fehér alapon, 9 cm</option>
+                        <option>Rakamazi turul, fekete alapon, 9 cm </option>
+                        <option>Magyarország, 8 cm</option>
+                        <option>Felvarrható magyar zászló, 7,5 cm</option>
+                        <option>Szívalakú fülbevaló, fehér</option>
+                        <option>Szívalakú fülbevaló, arany</option>
+                        <option>Szívalakú fülbevaló, ezüst</option>
+                        <option>Szívalakú fülbevaló, világos rózsaszín</option>
+                        <option>Szívalakú fülbevaló, sötét rózsaszín</option>
+                        <option>Szívalakú fülbevaló, mályva</option>
+                        <option>Szívalakú fülbevaló, lila</option>
+                        <option>Szívalakú fülbevaló, narancs</option>
+                        <option>Szívalakú fülbevaló, türkiz</option>
+                        <option>Szívalakú fülbevaló, zöld</option>
+                        <option>Szívalakú fülbevaló, királykék</option>
+                        <option>Szívalakú fülbevaló, fekete</option>
+                        <option>Virágalakú fülbevaló, fehér</option>
+                        <option>Virágalakú fülbevaló, arany</option>
+                        <option>Virágalakú fülbevaló, ezüst</option>
+                        <option>Virágalakú fülbevaló, világos rózsaszín</option>
+                        <option>Virágalakú fülbevaló, sötét rózsaszín</option>
+                        <option>Virágalakú fülbevaló, mályva</option>
+                        <option>Virágalakú fülbevaló, lila</option>
+                        <option>Virágalakú fülbevaló, narancs</option>
+                        <option>Virágalakú fülbevaló, türkiz</option>
+                        <option>Virágalakú fülbevaló, zöld</option>
+                        <option>Virágalakú fülbevaló, királykék</option>
+                        <option>Virágalakú fülbevaló, fekete</option>
+                        <option>Pillangóalakú fülbevaló, fehér</option>
+                        <option>Pillangóalakú fülbevaló, arany</option>
+                        <option>Pillangóalakú fülbevaló, ezüst</option>
+                        <option>Pillangóalakú fülbevaló, világos rózsaszín</option>
+                        <option>Pillangóalakú fülbevaló, sötét rózsaszín</option>
+                        <option>Pillangóalakú fülbevaló, mályva</option>
+                        <option>Pillangóalakú fülbevaló, lila</option>
+                        <option>Pillangóalakú fülbevaló, narancs</option>
+                        <option>Pillangóalakú fülbevaló, türkiz</option>
+                        <option>Pillangóalakú fülbevaló, zöld</option>
+                        <option>Pillangóalakú fülbevaló, királykék</option>
+                        <option>Pillangóalakú fülbevaló, fekete</option>
+                        <option>Levélalakú fülbevaló, fehér</option>
+                        <option>Levélalakú fülbevaló, arany</option>
+                        <option>Levélalakú fülbevaló, ezüst</option>
+                        <option>Levélalakú fülbevaló, világos rózsaszín</option>
+                        <option>Levélalakú fülbevaló, sötét rózsaszín</option>
+                        <option>Levélalakú fülbevaló, mályva</option>
+                        <option>Levélalakú fülbevaló, lila</option>
+                        <option>Levélalakú fülbevaló, narancs</option>
+                        <option>Levélalakú fülbevaló, türkiz</option>
+                        <option>Levélalakú fülbevaló, zöld</option>
+                        <option>Levélalakú fülbevaló, királykék</option>
+                        <option>Levélalakú fülbevaló, fekete</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, fehér</option>
+                        <option>PTölgyfalevél-alakú fülbevaló, arany</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, ezüst</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, világos rózsaszín</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, sötét rózsaszín</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, mályva</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, lila</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, narancs</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, türkiz</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, zöld</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, királykék</option>
+                        <option>Tölgyfalevél-alakú fülbevaló, fekete</option>
+                        <option>Tarisznya hímzett jellel</option>
+                        <option>Tarisznya hímzett jellel és évszámmal</option>
+                        <option>Tarisznya hímzett jellel, a csoport nevével és évszámmal</option>
+                        <option>Tarisznya saját jellel, névvel és a csoport nevével</option>
+                        <option>Tarisznya óvoda/csoport saját logójával</option>
+                        <option>Tarisznya hímzett virággal, évszámmal</option>
+                        <option>Tarisznya az iskola nevével/logójával, évszámmal</option>
+                        </select>
+                </div>
+                <div class="inputBox">
+                    <select class="opovoda" name="szolgaltatas" id="ovodaiselect" multiple>
+                        <option disabled="disabled" selected="celected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        <option>Ajtó</option>
+                        <option>Alma</option>
+                        <option>Asztal</option>
+                        <option>Autó</option>
+                        <option>Auró (Bogár)</option>
+                        <option>Ásó</option>
+                        <option>Baba</option>
+                        <option>Babakocsi</option>
+                        <option>Bagoly</option>
+                        <option>Banán</option>
+                        <option>Bárány</option>
+                        <option>Béka</option>
+                        <option>Bicikli</option>
+                        <option>Bohóc</option>
+                        <option>Bohóchal</option>
+                        <option>Boríték</option>
+                        <option>Bögre</option>
+                        <option>Busz (kék)</option>
+                        <option>Busz (sárga)</option>
+                        <option>Bűvös kocka</option>
+                        <option>Barna ceruza</option>
+                        <option>Piros ceruza</option>
+                        <option>Cica</option>
+                        <option>Fekete cica</option>
+                        <option>Cipő</option>
+                        <option>Csákó</option>
+                        <option>Csengő</option>
+                        <option>Cseresznye</option>
+                        <option>Csesze</option>
+                        <option>Csibe</option>
+                        <option>Csiga</option>
+                        <option>Csikóhal</option>
+                        <option>Csillag</option>
+                        <option>Csizma</option>
+                        <option>Csónak</option>
+                        <option>Delfin</option>
+                        <option>Dinó</option>
+                        <option>Dinnye</option>
+                        <option>Dió</option>
+                        <option>Dob</option>
+                        <option>Dobókocka</option>
+                        <option>Dominó</option>
+                        <option>Dömper</option>
+                        <option>Ecset</option>
+                        <option>Egér</option>
+                        <option>Elefánt</option>
+                        <option>Elemlámpa</option>
+                        <option>Eper</option>
+                        <option>Esernyő</option>
+                        <option>Építőkocka</option>
+                        <option>Fa</option>
+                        <option>Fagyi</option>
+                        <option>Falevél</option>
+                        <option>Fecske</option>
+                        <option>Felhő</option>
+                        <option>Fenyőfa</option>
+                        <option>Festőpaletta</option>
+                        <option>Fésű</option>
+                        <option>Focilabda</option>
+                        <option>Fogkefe</option>
+                        <option>Fűnyíró</option>
+                        <option>Gereblye</option>
+                        <option>Gitár</option>
+                        <option>Gomb</option>
+                        <option>Gomba</option>
+                        <option>Gólya</option>
+                        <option>Gőzhajó</option>
+                        <option>Gyertya</option>
+                        <option>Gyöngysor</option>
+                        <option>Gyűrű</option>
+                        <option>Hajó</option>
+                        <option>Halacska</option>
+                        <option>Harang</option>
+                        <option>Harkály</option>
+                        <option>Házikó</option>
+                        <option>Helikopter</option>
+                        <option>Hintaló</option>
+                        <option>Hold</option>
+                        <option>Hóember</option>
+                        <option>Hópehely</option>
+                        <option>Hóvirág</option>
+                        <option>Hőlégballon</option>
+                        <option>Ibolya</option>
+                        <option>Indián</option>
+                        <option>Iskolatáska</option>
+                        <option>Kacsa</option>
+                        <option>Kakas</option>
+                        <option>Kalap</option>
+                        <option>Kalapács</option>
+                        <option>Kamion</option>
+                        <option>Kanál</option>
+                        <option>Kancsó</option>
+                        <option>Karika</option>
+                        <option>Két karika</option>
+                        <option>Katica</option>
+                        <option>Kendő</option>
+                        <option>Kerék</option>
+                        <option>Kerítés</option>
+                        <option>Kesztyű</option>
+                        <option>Kifli</option>
+                        <option>Kícsó</option>
+                        <option>Kocka</option>
+                        <option>Kombájn</option>
+                        <option>Korona</option>
+                        <option>Kosár</option>
+                        <option>Kosárlabda</option>
+                        <option>Könyv</option>
+                        <option>Körte</option>
+                        <option>Közlekedési lámpa</option>
+                        <option>Kulcs</option>
+                        <option>Kutya</option>
+                        <option>Labda</option>
+                        <option>Létra</option>
+                        <option>Locsolókanna</option>
+                        <option>Lovacska</option>
+                        <option>Lóhere</option>
+                        <option>Lufi</option>
+                        <option>Maci</option>
+                        <option>Macifejek</option>
+                        <option>Madár</option>
+                        <option>Madáretető</option>
+                        <option>Makk</option>
+                        <option>Malac</option>
+                        <option>Markoló</option>
+                        <option>Masni</option>
+                        <option>Málna</option>
+                        <option>Méhecske</option>
+                        <option>Mérleghinta</option>
+                        <option>Mikulás</option>
+                        <option>Mosógép</option>
+                        <option>Motor</option>
+                        <option>Mozdony</option>
+                        <option>Mókus</option>
+                        <option>Nadrág</option>
+                        <option>Napocska</option>
+                        <option>Napraforgó</option>
+                        <option>Narancs</option>
+                        <option>Nyuszi</option>
+                        <option>Olló</option>
+                        <option>Oroszlán</option>
+                        <option>Ostor</option>
+                        <option>Óra</option>
+                        <option>Őszibarack</option>
+                        <option>Papírsárkány</option>
+                        <option>Perec</option>
+                        <option>Pillangó</option>
+                        <option>Pohár</option>
+                        <option>Postaláda</option>
+                        <option>Rakéta</option>
+                        <option>Repülő</option>
+                        <option>Roller</option>
+                        <option>Rózsa</option>
+                        <option>Ruha</option>
+                        <option>Sajt</option>
+                        <option>Sapka</option>
+                        <option>Sál</option>
+                        <option>Sárgarépa</option>
+                        <option>Söprű</option>
+                        <option>Süni</option>
+                        <option>Szaloncukor</option>
+                        <option>Számológép</option>
+                        <option>Szánkó</option>
+                        <option>Szemüveg</option>
+                        <option>Szék</option>
+                        <option>Szélmalom</option>
+                        <option>Szilva</option>
+                        <option>Szivárvány</option>
+                        <option>Szív</option>
+                        <option>Két szív</option>
+                        <option>Szoknya</option>
+                        <option>Szőlő (kék)</option>
+                        <option>Szőlő (zöld)</option>
+                        <option>Talicska</option>
+                        <option>Táska</option>
+                        <option>Teknős</option>
+                        <option>Telefon</option>
+                        <option>Televízió</option>
+                        <option>Teniszütő</option>
+                        <option>Terepjáró</option>
+                        <option>Tojás</option>
+                        <option>Torta</option>
+                        <option>Traktor</option>
+                        <option>Trombita</option>
+                        <option>Tulipán</option>
+                        <option>Tünder</option>
+                        <option>Tűzoltó</option>
+                        <option>Űrhajó</option>
+                        <option>Varázspálca</option>
+                        <option>Vasaló</option>
+                        <option>Vár</option>
+                        <option>Váza</option>
+                        <option>Villa</option>
+                        <option>Villám</option>
+                        <option>Virág</option>
+                        <option>Virág cserépben</option>
+                        <option>Virág szárral</option>
+                        <option>Virágcsokor</option>
+                        <option>Vonat</option>
+                        <option>Vödör (kék)</option>
+                        <option>Vödör (piros)</option>
+                        <option>Zászló</option>
+                        <option>Zsiráf</option>
+                        </select>
+                </div>
+                <div class="inputBox">
+                    <input type="text" class="kerdo" name="size">
+                    <span>Méret</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" class="kerdo" name="db">
+                    <span>Darabszám</span>
+                </div>
+                <div class="inputBox">
+                    <label for="myFile">Hímeztetni kívánt saját kép feltöltése... (JPG, JPEG, PNG, SVG, GIF, TIF, BMP)</label>
+                    <input type="file" id="myFile" name="myFile" accept=".jpg, .jpeg, .png, .gif, .tif, .bmp, .svg" multiple>
+                </div>
+                <div class="preview">
+                    <h6>Nincs fájl kiválasztva</h6>
+                </div>
+                <div class="inputBox">
+                    <textarea name="ajanlat"></textarea>
+                    <span>A munka leírása...</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" class="kerdo" name="" value="Árajánlatkérés elküldése">
+                </div>
+            </form>
+            <div id="status"></div>
+        </div>
+        <div class="Ajanlatinfo">
+            <h1>Rendeléssel, szállítással kapcsolatos tudnivalók:</h1>
+            <h2>Ha kitölti a szükséges információkat, készítünk Önnek egy ingyenes árajánlatot, amely tartalmazza a fizetendő programköltséget és a hímzés árát, valamint a várható postaköltséget és szállítási határidőt.</h2>
+            <p>Ha a megrendelt hímzés darabszáma meghaladja a 200-at, a programkészítés díjtalan! Saját készítésű termékeink megvásárlása után, amennyiben nincs megelégedve a termékkel, az áru átvételétől számított nyolc munkanapon belül Ön elállhat
+                vásárlási szándékától. Ha a terméket sértetlen állapotban, saját költségén visszajuttatja címünkre, a vételárat az Ön által megjelölt módon visszatérítjük.</p>
+        </div>
+    </div>
+</section>
+
+{{end}}

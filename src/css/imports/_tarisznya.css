@@ -1,0 +1,1200 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+    scroll-behavior: smooth;
+    background-color: white;
+}
+
+body {
+    height: 100%;
+}
+/*Menüsor*/
+
+#header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+#header .header {
+    min-height: 8vh;
+    background-color: #a48d64;
+    transition: .3s ease background-color;
+}
+
+#header .brand {
+    width: 130px;
+}
+
+#header .brand img {
+    width: 60px;
+}
+
+#header .brand h1 {
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    display: inline;
+    margin-top: 10px;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.header .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+}
+
+#header .nav-list>ul {
+    list-style: none;
+    position: absolute;
+    background-color: #a48d64;
+    width: 100vw;
+    height: 100vh;
+    left: 100%;
+    top: 0;
+    display: flex;
+    z-index: 1;
+    overflow-x: hidden;
+    flex-direction: column;
+    transition: .5s ease left;
+}
+
+#header .dropdown {
+    display: none;
+}
+
+#header ul li:hover .dropdown {
+    display: block;
+    background: #a48d64;
+    margin-left: 50px;
+    list-style: none;
+}
+
+#header ul li ul {
+    list-style: none;
+}
+
+#header .nav-list ul.active {
+    left: 25%;
+    top: 45px;
+}
+
+#header .nav-list ul a {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+}
+
+#header .nav-list ul .himzes {
+    cursor: default;
+}
+
+#header .nav-list ul a:hover {
+    color: #575046;
+}
+
+#header .nav-list ul .himzes:hover {
+    color: white;
+}
+
+#header .menu {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    transform: scale(.8);
+    margin-right: 15px;
+}
+
+#header .menu:after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+#header .menu .bar {
+    height: 2px;
+    width: 30px;
+    position: relative;
+    background-color: white;
+    z-index: -1;
+}
+
+#header .menu .bar::after,
+#header .menu .bar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    transition: .3s ease;
+    transition-property: top, bottom;
+}
+
+#header .menu .bar::after {
+    top: 8px;
+}
+
+#header .menu .bar::before {
+    bottom: 8px;
+}
+
+#header .menu.active .bar::before {
+    bottom: 0;
+}
+
+#header .menu.active .bar::after {
+    top: 0;
+}
+
+#header h1 {
+    color: white;
+}
+/*Főoldal része*/
+
+#hero {
+    background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+    background-size: cover;
+    background-position: top left;
+    position: relative;
+    z-index: 1;
+    padding-top: 35px;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 50px;
+    padding-top: 170px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#hero h1 {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    font-size: 1.2rem;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #333;
+    font-weight: 600;
+}
+
+#hero hr {
+    border-color: white;
+}
+
+#hero h2 {
+    display: block;
+    width: fit-content;
+    font-size: 0.9rem;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-shadow: 2px 2px 2px #333;
+}
+
+#hero h3 {
+    display: block;
+    width: fit-content;
+    font-size: 0.9rem;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-shadow: 2px 2px 2px #333;
+}
+
+#hero .call {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: #a48d64;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 5px;
+    transition: .5s ease;
+    transition-property: background-color, color;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px #333;
+}
+/*Bemutatkozás rész*/
+
+#bemutat {
+    background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 150px 20px;
+}
+
+#bemutat .bemutat-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+#bemutat .bemutat-container h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#bemutat .bemutat-text {
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    width: 95%;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+#bemutat .bemutat-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .6;
+    z-index: -1;
+}
+
+#bemutat .bemutat-text p {
+    text-align: center;
+    color: #575046;
+    margin-bottom: 20px;
+}
+
+#bemutat .call {
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    background-color: #a48d64;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    box-shadow: 1px 1px 1px black;
+    width: 260px;
+    margin: 0 auto;
+}
+/*Hímzésen belüli menüpontok/*
+
+/*Hímzések header részei*/
+
+#references .references-header {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    padding-top: 150px;
+    max-width: 100%;
+}
+
+#references .references-header h2 {
+    margin-bottom: 30px;
+    margin: 0;
+    color: #a48d64;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+#references .references-header p {
+    color: #a48d64;
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+#references h5 {
+    color: #a48d64;
+    font-size: 0.7rem;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+#references hr {
+    border-color: #a48d64;
+    fill: #a48d64;
+}
+/*Referenciák*/
+
+.referenc-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.referenc-gallery>.referenc-image {
+    flex: 60%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin: 4px;
+}
+
+.referenc-gallery>.referenc-image:hover>a,
+.referenc-gallery>.referenc-image:focus>a {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.referenc-gallery>.referenc-image>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: #6a5c4a;
+    background-position: center;
+    transition: all .5s ease-out;
+    transform: scale(1);
+}
+
+.referenc-gallery>.referenc-image>a img {
+    width: 100%;
+}
+/*Címerek képei*/
+
+.cimer-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.cimer-gallery>a {
+    flex: 60%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-out;
+    background-position: center;
+    transform: scale(1);
+}
+
+.cimer-gallery>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cimer-gallery>a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cimer-gallery>a>span {
+    z-index: 1;
+    font-size: 0.7rem;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 50px;
+    color: white;
+    text-shadow: 0.5px 1px black;
+}
+/*Magyar jelképek képei*/
+
+.magyar-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.magyar-gallery>a {
+    flex: 60%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-out;
+    background-position: center;
+    transform: scale(1);
+}
+
+.magyar-gallery>a>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magyar-gallery>a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.magyar-gallery>a>span {
+    z-index: 1;
+    font-size: 0.7rem;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 50px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.5px 1px black;
+}
+/*Tarisznyák képei*/
+
+.index-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.index-gallery>.gallery-image {
+    flex: 60%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin: 4px;
+}
+
+.index-gallery>.gallery-image:hover>a,
+.index-gallery>.gallery-image:focus>a {
+    transform: scale(1.1);
+    opacity: .9;
+}
+
+.index-gallery>.gallery-image>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: #6a5c4a;
+    color: white;
+    background-position: center;
+    background-size: cover;
+    transition: all .5s ease-out;
+    transform: scale(1);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.index-gallery>.gallery-image>a::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.index-gallery>.gallery-image>a>span {
+    z-index: 1;
+    font-size: 0.7rem;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0.5px 1px black;
+}
+
+.index-gallery>.gallery-image>a>label {
+    z-index: 1;
+    font-size: 0.6rem;
+    text-transform: lowercase;
+}
+
+.index-gallery>.gallery-image>a>svg {
+    display: none;
+}
+
+.index-gallery>.gallery-image:hover>a svg {
+    z-index: 0;
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 250px;
+    z-index: 1;
+}
+
+.index-gallery>.gallery-image>.nyers {
+    background-image: url("/img/len_csiga.jpg");
+}
+
+.index-gallery>.gallery-image>.jel {
+    background-image: url("/img/tar_vuk.jpg");
+}
+
+.index-gallery>.gallery-image>.jel_evszam {
+    background-image: url("/img/tar_kocka2010.jpg");
+}
+
+.index-gallery>.gallery-image>.jel_evszam_csoport {
+    background-image: url("/img/tar_suni_cs_09.jpg");
+}
+
+.index-gallery>.gallery-image>.sajatjel {
+    background-image: url("/img/szivecske_lajos.jpg");
+}
+
+.index-gallery>.gallery-image>.sajatlogo {
+    background-image: url("/img/evaneni.jpg");
+}
+
+.index-gallery>.gallery-image>.virag {
+    background-image: url("/img/fehervirag2011.jpg");
+}
+
+.index-gallery>.gallery-image>.iskolaneve {
+    background-image: url("/img/jag2011.jpg");
+}
+/*Egyéb termékek képei*/
+
+.index-gallery>.gallery-image>.fulbevalok {
+    background-image: url("/img/virag_rozsaszin.jpg");
+}
+
+.index-gallery>.gallery-image>.karacsonyfadisz {
+    background-image: url("/img/hopihe.jpg");
+}
+
+.index-gallery>.gallery-image>.hangulatjelek {
+    background-image: url("/img/mosolygo.jpg");
+}
+
+.index-gallery>.gallery-image>.kulcstarto {
+    background-image: url("/img/kulcs1a.jpg");
+}
+
+.index-gallery>.gallery-image>.aldas {
+    background-image: url("/img/jaszsagi.jpg");
+}
+
+.index-gallery>.gallery-image>.torolkozo {
+    background-image: url("/img/torolkozo_legjobb.jpg");
+}
+/*Ajánlatkérés*/
+
+#ajanlat {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/img/embroidery-3719464_1280_barna.jpg");
+    background-size: cover;
+}
+
+#ajanlat .ajanlat-header {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+#ajanlat .ajanlat-header h3 {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+#ajanlat .ajanlat-header p {
+    font-size: 1rem;
+    color: white;
+}
+
+#ajanlat .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    background-color: #a48d64;
+    margin-bottom: 40px;
+}
+
+.contactForm h4 {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox select,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    color: black;
+    outline: none;
+    resize: none;
+    background-color: white;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+    margin-left: 5px;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: white;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox .ovoda,
+.contactForm .inputBox .termek,
+.contactForm .inputBox .sajat {
+    margin: 3px;
+}
+
+.contactForm .inputBox input[type="file"] {
+    color: white;
+    background-color: #a48d64;
+    border: white solid 3px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+}
+
+form ol {
+    padding-left: 0;
+}
+
+form li,
+div>h6 {
+    background: #a48d64;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+    font-size: 16px;
+}
+
+form h6 {
+    line-height: 32px;
+    padding-left: 20px;
+    color: white;
+    font-size: 10px;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100%;
+    background: #575046;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.contactForm .kosz p {
+    width: 100%;
+    background: #3c7c51;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+}
+
+.contactForm .opovoda {
+    display: none;
+}
+
+.contactForm .option {
+    display: none;
+}
+/*#status {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+    flex-direction: row;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}*/
+
+#ajanlat .Ajanlatinfo {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+#ajanlat .Ajanlatinfo h1 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#ajanlat .Ajanlatinfo h2 {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#ajanlat .Ajanlatinfo p {
+    font-size: 0.9rem;
+}
+/*Kapcsolat infók*/
+
+#contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/img/embroidery-3719464_1280_barna.jpg");
+    background-size: cover;
+}
+
+#contact .contact-header {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+#contact .contact-header h3 {
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+
+#contact .contact-header p {
+    font-size: 1rem;
+    color: white;
+}
+
+#contact .contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+#contact .contact-container .map iframe {
+    width: 350px;
+    height: 450px;
+    border: solid #575046;
+}
+
+#contact .contact-container::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .6;
+    z-index: -1;
+    padding: 30px;
+}
+
+#contact .contactInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    color: #575046;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+#contact .icon {
+    display: flex;
+}
+
+#contact .icon span {
+    margin-left: 10px;
+}
+
+#contact .contactInfo .contactmode {
+    display: inline;
+}
+
+#contact .contactInfo p {
+    position: relative;
+    display: flex;
+    left: 37px;
+    color: #575046;
+    margin-bottom: 30px;
+}
+/*Footer*/
+
+#footer {
+    background-color: #a48d64;
+}
+
+#footer .footer {
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+#footer .logojel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
+#footer .social-icon {
+    margin: 0 auto;
+}
+
+#footer .social-item {
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-szoveg {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+#footer h3 {
+    color: white;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    display: inline;
+    margin: 3px;
+}
+
+#footer p {
+    color: white;
+    font-size: 0.5rem;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+    #hero {
+        background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+        background-position: top center;
+        padding-top: 50px;
+    }
+    #header .nav-list ul.active {
+        left: 200px;
+    }
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    #hero h2 {
+        font-size: 1rem;
+    }
+    #hero .call {
+        font-size: 1rem;
+    }
+    #hero .ajanlat {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin: 20px;
+    }
+    .index-gallery>.gallery-image {
+        flex: 40%;
+        height: 20rem;
+    }
+    .referenc-gallery>.referenc-image {
+        flex: 40%;
+        height: 20rem;
+    }
+    .magyar-gallery>a {
+        flex: 40%;
+        height: 20rem;
+    }
+    .cimer-gallery>a {
+        flex: 40%;
+        height: 20rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #header .nav-bar {
+        left: 1000px;
+    }
+    #header .nav-list ul {
+        width: 100%;
+    }
+    #header .menu {
+        display: none;
+    }
+    #header .nav-list ul {
+        position: initial;
+        display: block;
+        height: auto;
+        width: fit-content;
+        background-color: transparent;
+    }
+    #header .nav-list ul li {
+        display: inline-block;
+    }
+    #header ul li:hover .dropdown {
+        display: block;
+        width: 150px;
+        margin-left: 0;
+        position: absolute;
+    }
+    #header .nav-list ul li a {
+        font-size: 0.6rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+    }
+    #header .nav-list ul a:after {
+        display: none;
+    }
+    #hero {
+        background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+        background-size: cover;
+    }
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+    #hero h2 {
+        font-size: 1rem;
+    }
+    #hero .call {
+        font-size: 1rem;
+    }
+    #hero .ajanlat {
+        font-size: 1rem;
+        margin-top: 20px;
+        margin: 20px;
+    }
+    .index-gallery>.gallery-image {
+        flex: 30%;
+        height: 20rem;
+    }
+    .referenc-gallery>.referenc-image {
+        flex: 30%;
+        height: 20rem;
+    }
+    .magyar-gallery>a {
+        flex: 30%;
+        height: 20rem;
+    }
+    .cimer-gallery>a {
+        flex: 30%;
+        height: 20rem;
+    }
+    #ajanlat {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #ajanlat .contact-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #ajanlat .Ajanlatinfo {
+        padding-left: 30px;
+    }
+    #ajanlat .contactInfo {
+        display: flex;
+        padding-left: 250px;
+    }
+    #contact {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact .contact-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #contact .contact-container .map iframe {
+        width: 600px;
+        margin-left: 50px;
+    }
+    #contact .contactInfo {
+        display: flex;
+        padding-left: 200px;
+    }
+}

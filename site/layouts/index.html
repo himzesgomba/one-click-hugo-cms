@@ -1,13 +1,13 @@
 {{ define "main" }}
-
-{{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
-
-{{ partial "short-text" .Params.blurb}}
-
-{{ partial "2-up" .Params }}
-
-{{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }}
-
-{{ partial "blog" . }}
-
-{{ end }}
+<section id="hero">
+    <div class="hero container">
+        <div>
+            <h1>Egyedi hímzések megrendelésre</h1>
+            <hr>
+            <h2>Óvodai jelek, Címerek, Tarisznyák</h2>
+            <h3>Hívjon bizalommal!</h3>
+            <a href="tel:+36205552036" type="button" class="call" style="text-decoration: none;">Tel.: +36 20 555 2036</a>
+        </div>
+    </div>
+</section>
+{{ end}}
