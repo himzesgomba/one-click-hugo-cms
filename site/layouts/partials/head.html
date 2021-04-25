@@ -25,8 +25,9 @@
 	<!--- SEO -->
 	<meta name="description" content="Egyedi hímzések, megrendelésre">
     <meta name="keywords" content="varrás, hímzés, óvodai jelek, tarisznyák, címerek">
-
-  {{ if .IsHome }}
+  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/css/lightgallery.min.css" integrity="sha512-gk6oCFFexhboh5r/6fov3zqTCA2plJ+uIoUx941tQSFg6TNYahuvh1esZVV0kkK+i5Kl74jPmNJTTaHAovWIhw==" crossorigin="anonymous" />
+	{{ if .IsHome }}
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {{ end }}
+    {{ end }}
 </head>
