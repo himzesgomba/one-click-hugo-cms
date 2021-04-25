@@ -1,0 +1,14 @@
+<div class="gallery-image"
+     data-images={{ .images | jsonify }}>
+    <a style="background-image: url({{ .backgroundimage }});" 
+       href="#">
+        <span>{{ .title }}
+            <br>
+            <b>{{ .price }}</b>
+            <br>
+        </span>
+        {{ if gt (len .images) 1 }}
+        {{ partial "gallery-icon-svg" . }}
+        {{ end }}
+    </a>
+</div>
