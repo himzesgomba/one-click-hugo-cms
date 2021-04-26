@@ -7,42 +7,6 @@
         <h5>Árainkat ÁFA nem terheli.</h5>
     </div>
 </section>
-<section class="magyar-gallery">
-    <a href="./images/magyaro.jpg">
-        <img src="./images/magyaro.jpg" />
-        <span>Magyarország (8 cm)<br><b>270 Ft/db</b></br></span>
-    </a>
-    <a href="./images/magyar_zaszlo.jpg">
-        <img src="./images/magyar_zaszlo.jpg" />
-        <span>Magyar zászló (7,5 cm)<br><b>400 Ft/db</b></br></span>
-    </a>
-    <a href="./images/nmo_kereszt_a.jpg">
-        <img src="./images/nmo_kereszt_a.jpg" />
-        <span>Nagy-Magyarország, arany kontúrral (8 cm)<br><b>350 Ft/db</b></br></span>
-    </a>
-    <a href="./images/nmo_kereszt_f.jpg">
-        <img src="./images/nmo_kereszt_f.jpg" />
-        <span>Nagy-Magyarország, fekete kontúrral (8 cm)<br><b>350 Ft/db</b></br></span>
-    </a>
-    <a href="./images/nmo_rovas_feher.jpg">
-        <img src="./images/nmo_rovas_feher.jpg" />
-        <span>Nagy-Magyarország, rovásírással, fehér (7,5 cm)<br><b>250 Ft/db</b></br></span>
-    </a>
-    <a href="./images/nmo_rovas_fekete.jpg">
-        <img src="./images/nmo_rovas_fekete.jpg" />
-        <span>Nagy-Magyarország, rovásírással, fekete (7,5 cm)<br><b>250 Ft/db</b></br></span>
-    </a>
-    <a href="./images/nmo_arpad.jpg">
-        <img src="./images/nmo_arpad.jpg" />
-        <span>Nagy-Magyarország, Árpád-sávos (7,5 cm)<br><b>300 Ft/db</b></br></span>
-    </a>
-    <a href="./images/turul_feher.jpg">
-        <img src="./images/turul_feher.jpg" />
-        <span>Rakamazi turul, fehér (9 cm)<br><b>350 Ft/db</b></br></span>
-    </a>
-    <a href="./images/turul_fekete.jpg">
-        <img src="./images/turul_fekete.jpg" />
-        <span>Rakamazi turul, fekete (9 cm)<br><b>350 Ft/db</b></br></span>
-    </a>
-</section>
+
+{{ partial "image-grid" .Params.galleries }}
 {{end}}

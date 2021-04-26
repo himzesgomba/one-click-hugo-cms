@@ -1,29 +1,14 @@
 {{ define "main" }}
-<section class="cimer-gallery">
-    <a href="./images/cimer__a_5.jpg">
-        <img src="./images/cimer__a_5.jpg" />
-        <span>Felvarrható magyar címer, fémarannyal (5,5 cm)</span>
-    </a>
-    <a href="./images/cimer__a_7.jpg">
-        <img src="./images/cimer__a_7.jpg" />
-        <span>Felvarrható magyar címer, fémarannyal (7,5 cm)</span>
-    </a>
-    <a href="./images/cimer__a_14.jpg">
-        <img src="./images/cimer__a_14.jpg" />
-        <span>Felvarrható magyar címer, fémarannyal (14 cm)</span>
-    </a>
-    <a href="./images/cimer__a_25.jpg">
-        <img src="./images/cimer__a_25.jpg" />
-        <span>Felvarrható magyar címer, fémarannyal (25 cm)</span>
-    </a>
-    <a href="./images/cimer__s_5.jpg">
-        <img src="./images/cimer__s_5.jpg" />
-        <span>Felvarrható magyar címer, aranysárga cérnával (5,5 cm)</span>
-    </a>
-    <a href="./images/cimer__s_7.jpg">
-        <img src="./images/cimer__s_7.jpg" />
-        <span>Felvarrható magyar címer, fémarannyal (7,5 cm)</span>
-    </a>
+<section id="references">
+    <div class="references-header">
+        <h2 class="section-title">Címerek</h2>
+        <hr>
+        <p>Felvarrható hímzett címereinket műszálas alapanyagra, poliészter cérnával készítjük, színtartósságuk garantált.</p>
+        <h5>Árainkat ÁFA nem terheli.</h5>
+    </div>
 </section>
+
+
+{{ partial "image-grid" .Params.galleries }}
 
 {{end}}
