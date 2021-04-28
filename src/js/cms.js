@@ -11,9 +11,10 @@ import ValuesPreview from "./cms-preview-templates/values";
 import ContactPreview from "./cms-preview-templates/contact";
 
 CMS.registerPreviewStyle(styles, { raw: true });
-CMS.registerPreviewTemplate("home", HomePreview);
-CMS.registerPreviewTemplate("post", PostPreview);
-CMS.registerPreviewTemplate("products", ProductsPreview);
-CMS.registerPreviewTemplate("values", ValuesPreview);
-CMS.registerPreviewTemplate("contact", ContactPreview);
+CMS.registerPreviewTemplate("tarisznya", HomePreview);
+CMS.registerPreviewTemplate("egyeb_termekek", PostPreview);
+CMS.registerPreviewTemplate("cimerek", ProductsPreview);
+CMS.registerPreviewTemplate("magyar_jelkepek", ValuesPreview);
+CMS.registerPreviewTemplate("referenciak", ContactPreview);
+CMS.registerPreviewTemplate("ajanlatkeres", ContactPreview);
 CMS.init();

@@ -1,16 +1,16 @@
 ---
 title: Tarisznyák
-galleries:
+galleries: 
   - title: Hímzett Jel
     price: 700 Ft/db
     backgroundimage: /img/tar_vuk.jpg
-    images:
+    images: 
       - thumb: /img/tar_vuk.jpg
         img: /img/tar_vuk.jpg
   - title: Jel és évszám
     price: 800 Ft/db
     backgroundimage: /img/tar_kocka2010.jpg
-    images:
+    images: 
       - thumb: /img/tar_kocka2010.jpg
         img: /img/tar_kocka2010.jpg
       - thumb: /img/tar_teknos.jpg
@@ -47,7 +47,7 @@ galleries:
         img: /img/kekvirag2011.jpg
   - title: Iskola neve/logója és évszám
     price: 7-800 Ft/db
-    backgroundimage: /img/tar_vuk.jpg
+    backgroundimage: /img/jag2011.jpg
     images:
       - thumb: /img/jag2011.jpg
         img: /img/jag2011.jpg    

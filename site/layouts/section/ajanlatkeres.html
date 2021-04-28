@@ -8,7 +8,7 @@
     <div class="contact-container">
         <div class="contactForm">
             <form action="https://formsubmit.co/ajanlat@himzesgomban.hu" method="POST">
-                <input type="hidden" name="_next" value="https://himzesgomba.github.io/himzesgomban_proba.github.io/index.arajanlat.k.html">
+                <input type="hidden" name="_next" value="/ajanlatkeres.k">
                 <h4>Ingyenes árajánlatkérés</h4>
                 <div class="inputBox">
                     <input type="text" class="kerdo" name="nev" required="required">
@@ -27,216 +27,20 @@
                     <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek">A termékek közül szeretnék választani</label>
                     <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
                 </div>
-
-                {{ partial "ajanlat_option" .Params.lehetosegek }}
-
-
+                <div class="inputBox">
+                    <select class="option" name="szolgaltatas" id="egyebselect" multiple>
+                        <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        {{ range .Params.lehetosegek }}
+                            <option>{{ .opcio }}</option>
+                        {{end}} 
+                        </select>
+                </div>
                 <div class="inputBox">
                     <select class="opovoda" name="szolgaltatas" id="ovodaiselect" multiple>
                         <option disabled="disabled" selected="celected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
-                        <option>Ajtó</option>
-                        <option>Alma</option>
-                        <option>Asztal</option>
-                        <option>Autó</option>
-                        <option>Auró (Bogár)</option>
-                        <option>Ásó</option>
-                        <option>Baba</option>
-                        <option>Babakocsi</option>
-                        <option>Bagoly</option>
-                        <option>Banán</option>
-                        <option>Bárány</option>
-                        <option>Béka</option>
-                        <option>Bicikli</option>
-                        <option>Bohóc</option>
-                        <option>Bohóchal</option>
-                        <option>Boríték</option>
-                        <option>Bögre</option>
-                        <option>Busz (kék)</option>
-                        <option>Busz (sárga)</option>
-                        <option>Bűvös kocka</option>
-                        <option>Barna ceruza</option>
-                        <option>Piros ceruza</option>
-                        <option>Cica</option>
-                        <option>Fekete cica</option>
-                        <option>Cipő</option>
-                        <option>Csákó</option>
-                        <option>Csengő</option>
-                        <option>Cseresznye</option>
-                        <option>Csesze</option>
-                        <option>Csibe</option>
-                        <option>Csiga</option>
-                        <option>Csikóhal</option>
-                        <option>Csillag</option>
-                        <option>Csizma</option>
-                        <option>Csónak</option>
-                        <option>Delfin</option>
-                        <option>Dinó</option>
-                        <option>Dinnye</option>
-                        <option>Dió</option>
-                        <option>Dob</option>
-                        <option>Dobókocka</option>
-                        <option>Dominó</option>
-                        <option>Dömper</option>
-                        <option>Ecset</option>
-                        <option>Egér</option>
-                        <option>Elefánt</option>
-                        <option>Elemlámpa</option>
-                        <option>Eper</option>
-                        <option>Esernyő</option>
-                        <option>Építőkocka</option>
-                        <option>Fa</option>
-                        <option>Fagyi</option>
-                        <option>Falevél</option>
-                        <option>Fecske</option>
-                        <option>Felhő</option>
-                        <option>Fenyőfa</option>
-                        <option>Festőpaletta</option>
-                        <option>Fésű</option>
-                        <option>Focilabda</option>
-                        <option>Fogkefe</option>
-                        <option>Fűnyíró</option>
-                        <option>Gereblye</option>
-                        <option>Gitár</option>
-                        <option>Gomb</option>
-                        <option>Gomba</option>
-                        <option>Gólya</option>
-                        <option>Gőzhajó</option>
-                        <option>Gyertya</option>
-                        <option>Gyöngysor</option>
-                        <option>Gyűrű</option>
-                        <option>Hajó</option>
-                        <option>Halacska</option>
-                        <option>Harang</option>
-                        <option>Harkály</option>
-                        <option>Házikó</option>
-                        <option>Helikopter</option>
-                        <option>Hintaló</option>
-                        <option>Hold</option>
-                        <option>Hóember</option>
-                        <option>Hópehely</option>
-                        <option>Hóvirág</option>
-                        <option>Hőlégballon</option>
-                        <option>Ibolya</option>
-                        <option>Indián</option>
-                        <option>Iskolatáska</option>
-                        <option>Kacsa</option>
-                        <option>Kakas</option>
-                        <option>Kalap</option>
-                        <option>Kalapács</option>
-                        <option>Kamion</option>
-                        <option>Kanál</option>
-                        <option>Kancsó</option>
-                        <option>Karika</option>
-                        <option>Két karika</option>
-                        <option>Katica</option>
-                        <option>Kendő</option>
-                        <option>Kerék</option>
-                        <option>Kerítés</option>
-                        <option>Kesztyű</option>
-                        <option>Kifli</option>
-                        <option>Kícsó</option>
-                        <option>Kocka</option>
-                        <option>Kombájn</option>
-                        <option>Korona</option>
-                        <option>Kosár</option>
-                        <option>Kosárlabda</option>
-                        <option>Könyv</option>
-                        <option>Körte</option>
-                        <option>Közlekedési lámpa</option>
-                        <option>Kulcs</option>
-                        <option>Kutya</option>
-                        <option>Labda</option>
-                        <option>Létra</option>
-                        <option>Locsolókanna</option>
-                        <option>Lovacska</option>
-                        <option>Lóhere</option>
-                        <option>Lufi</option>
-                        <option>Maci</option>
-                        <option>Macifejek</option>
-                        <option>Madár</option>
-                        <option>Madáretető</option>
-                        <option>Makk</option>
-                        <option>Malac</option>
-                        <option>Markoló</option>
-                        <option>Masni</option>
-                        <option>Málna</option>
-                        <option>Méhecske</option>
-                        <option>Mérleghinta</option>
-                        <option>Mikulás</option>
-                        <option>Mosógép</option>
-                        <option>Motor</option>
-                        <option>Mozdony</option>
-                        <option>Mókus</option>
-                        <option>Nadrág</option>
-                        <option>Napocska</option>
-                        <option>Napraforgó</option>
-                        <option>Narancs</option>
-                        <option>Nyuszi</option>
-                        <option>Olló</option>
-                        <option>Oroszlán</option>
-                        <option>Ostor</option>
-                        <option>Óra</option>
-                        <option>Őszibarack</option>
-                        <option>Papírsárkány</option>
-                        <option>Perec</option>
-                        <option>Pillangó</option>
-                        <option>Pohár</option>
-                        <option>Postaláda</option>
-                        <option>Rakéta</option>
-                        <option>Repülő</option>
-                        <option>Roller</option>
-                        <option>Rózsa</option>
-                        <option>Ruha</option>
-                        <option>Sajt</option>
-                        <option>Sapka</option>
-                        <option>Sál</option>
-                        <option>Sárgarépa</option>
-                        <option>Söprű</option>
-                        <option>Süni</option>
-                        <option>Szaloncukor</option>
-                        <option>Számológép</option>
-                        <option>Szánkó</option>
-                        <option>Szemüveg</option>
-                        <option>Szék</option>
-                        <option>Szélmalom</option>
-                        <option>Szilva</option>
-                        <option>Szivárvány</option>
-                        <option>Szív</option>
-                        <option>Két szív</option>
-                        <option>Szoknya</option>
-                        <option>Szőlő (kék)</option>
-                        <option>Szőlő (zöld)</option>
-                        <option>Talicska</option>
-                        <option>Táska</option>
-                        <option>Teknős</option>
-                        <option>Telefon</option>
-                        <option>Televízió</option>
-                        <option>Teniszütő</option>
-                        <option>Terepjáró</option>
-                        <option>Tojás</option>
-                        <option>Torta</option>
-                        <option>Traktor</option>
-                        <option>Trombita</option>
-                        <option>Tulipán</option>
-                        <option>Tünder</option>
-                        <option>Tűzoltó</option>
-                        <option>Űrhajó</option>
-                        <option>Varázspálca</option>
-                        <option>Vasaló</option>
-                        <option>Vár</option>
-                        <option>Váza</option>
-                        <option>Villa</option>
-                        <option>Villám</option>
-                        <option>Virág</option>
-                        <option>Virág cserépben</option>
-                        <option>Virág szárral</option>
-                        <option>Virágcsokor</option>
-                        <option>Vonat</option>
-                        <option>Vödör (kék)</option>
-                        <option>Vödör (piros)</option>
-                        <option>Zászló</option>
-                        <option>Zsiráf</option>
-                        </select>
+                        {{ range .Params.ovodaijelek }}
+                            <option>{{ .opt }}</option>
+                        {{end}} 
                 </div>
                 <div class="inputBox">
                     <input type="text" class="kerdo" name="size">

@@ -427,6 +427,41 @@ body {
 }
 /*Címerek képei*/
 
+/*.static-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 50px;
+}
+
+.static-image-grid>a {
+    flex: 60%;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    margin: 4px;
+}
+
+
+.static-image-grid>a>span {
+    z-index: 1;
+    font-size: 0.7rem;
+    margin: 50px;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 0.5px 1px black;
+}
+
+.static-image-grid>a>label {
+    z-index: 1;
+    font-size: 0.6rem;
+    text-transform: lowercase;
+}*/
+
 .cimer-gallery {
     display: flex;
     flex-wrap: wrap;

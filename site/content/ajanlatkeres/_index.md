@@ -1,6 +1,6 @@
 ---
 title: Árajánlatkérés
-lehetosegek:
+lehetosegek:    
     - opcio: Házi áldás jászsági szűcshímzéses koszorúban (19x24,5cm)
     - opcio: Házi áldás sárközi jegykendőmintával (19x24,5cm)
     - opcio: Magyar címer fémarannyal hímezve, 5,5 cm
@@ -88,205 +88,205 @@ lehetosegek:
     - opcio: Tarisznya az iskola nevével/logójával, évszámmal
 ovodaijelek: 
     - opt: Ajtó
-                        - opt: Alma
-                        - opt: Asztal
-                        - opt: Autó
-                        - opt: Auró (Bogár)
-                        - opt: Ásó
-                        - opt: Baba
-                        - opt: Babakocsi
-                        - opt: Bagoly
-                        - opt: Banán
-                        - opt: Bárány
-                        - opt: Béka
-                        - opt: Bicikli
-                        - opt: Bohóc
-                        - opt: Bohóchal
-                        - opt: Boríték
-                        - opt: Bögre
-                        - opt: Busz (kék)
-                        - opt: Busz (sárga)
-                        - opt: Bűvös kocka
-                        - opt: Barna ceruza
-                        - opt: Piros ceruza
-                        - opt: Cica
-                        - opt: Fekete cica
-                        - opt: Cipő
-                        - opt: Csákó
-                        - opt: Csengő
-                        - opt: Cseresznye
-                        - opt: Csesze
-                        - opt: Csibe
-                        - opt: Csiga
-                        - opt: Csikóhal
-                        - opt: Csillag
-                        - opt: Csizma
-                        - opt: Csónak
-                        - opt: Delfin
-                        - opt: Dinó
-                        - opt: Dinnye
-                        - opt: Dió
-                        - opt: Dob
-                        - opt: Dobókocka
-                        - opt: Dominó
-                        - opt: Dömper
-                        - opt: Ecset
-                        - opt: Egér
-                        - opt: Elefánt
-                        - opt: Elemlámpa
-                        - opt: Eper
-                        - opt: Esernyő
-                        - opt: Építőkocka
-                        - opt: Fa
-                        - opt: Fagyi
-                        - opt: Falevél
-                        - opt: Fecske
-                        - opt: Felhő
-                        - opt: Fenyőfa
-                        - opt: Festőpaletta
-                        - opt: Fésű
-                        - opt: Focilabda
-                        - opt: Fogkefe
-                        - opt: Fűnyíró
-                        - opt: Gereblye
-                        - opt: Gitár
-                        - opt: Gomb
-                        - opt: Gomba
-                        - opt: Gólya
-                        - opt: Gőzhajó
-                        - opt: Gyertya
-                        - opt: Gyöngysor
-                        - opt: Gyűrű
-                        - opt: Hajó
-                        - opt: Halacska
-                        - opt: Harang
-                        - opt: Harkály
-                        - opt: Házikó
-                        - opt: Helik- opter
-                        - opt: Hintaló
-                        - opt: Hold
-                        - opt: Hóember
-                        - opt: Hópehely
-                        - opt: Hóvirág
-                        - opt: Hőlégballon
-                        - opt: Ibolya
-                        - opt: Indián
-                        - opt: Iskolatáska
-                        - opt: Kacsa
-                        - opt: Kakas
-                        - opt: Kalap
-                        - opt: Kalapács
-                        - opt: Kamion
-                        - opt: Kanál
-                        - opt: Kancsó
-                        - opt: Karika
-                        - opt: Két karika
-                        - opt: Katica
-                        - opt: Kendő
-                        - opt: Kerék
-                        - opt: Kerítés
-                        - opt: Kesztyű
-                        - opt: Kifli
-                        - opt: Kícsó
-                        - opt: Kocka
-                        - opt: Kombájn
-                        - opt: Korona
-                        - opt: Kosár
-                        - opt: Kosárlabda
-                        - opt: Könyv
-                        - opt: Körte
-                        - opt: Közlekedési lámpa
-                        - opt: Kulcs
-                        - opt: Kutya
-                        - opt: Labda
-                        - opt: Létra
-                        - opt: Locsolókanna
-                        - opt: Lovacska
-                        - opt: Lóhere
-                        - opt: Lufi
-                        - opt: Maci
-                        - opt: Macifejek
-                        - opt: Madár
-                        - opt: Madáretető
-                        - opt: Makk
-                        - opt: Malac
-                        - opt: Markoló
-                        - opt: Masni
-                        - opt: Málna
-                        - opt: Méhecske
-                        - opt: Mérleghinta
-                        - opt: Mikulás
-                        - opt: Mosógép
-                        - opt: Motor
-                        - opt: Mozdony
-                        - opt: Mókus
-                        - opt: Nadrág
-                        - opt: Napocska
-                        - opt: Napraforgó
-                        - opt: Narancs
-                        - opt: Nyuszi
-                        - opt: Olló
-                        - opt: Oroszlán
-                        - opt: Ostor
-                        - opt: Óra
-                        - opt: Őszibarack
-                        - opt: Papírsárkány
-                        - opt: Perec
-                        - opt: Pillangó
-                        - opt: Pohár
-                        - opt: Postaláda
-                        - opt: Rakéta
-                        - opt: Repülő
-                        - opt: Roller
-                        - opt: Rózsa
-                        - opt: Ruha
-                        - opt: Sajt
-                        - opt: Sapka
-                        - opt: Sál
-                        - opt: Sárgarépa
-                        - opt: Söprű
-                        - opt: Süni
-                        - opt: Szaloncukor
-                        - opt: Számológép
-                        - opt: Szánkó
-                        - opt: Szemüveg
-                        - opt: Szék
-                        - opt: Szélmalom
-                        - opt: Szilva
-                        - opt: Szivárvány
-                        - opt: Szív
-                        - opt: Két szív
-                        - opt: Szoknya
-                        - opt: Szőlő (kék)
-                        - opt: Szőlő (zöld)
-                        - opt: Talicska
-                        - opt: Táska
-                        - opt: Teknős
-                        - opt: Telefon
-                        - opt: Televízió
-                        - opt: Teniszütő
-                        - opt: Terepjáró
-                        - opt: Tojás
-                        - opt: Torta
-                        - opt: Traktor
-                        - opt: Trombita
-                        - opt: Tulipán
-                        - opt: Tünder
-                        - opt: Tűzoltó
-                        - opt: Űrhajó
-                        - opt: Varázspálca
-                        - opt: Vasaló
-                        - opt: Vár
-                        - opt: Váza
-                        - opt: Villa
-                        - opt: Villám
-                        - opt: Virág
-                        - opt: Virág cserépben
-                        - opt: Virág szárral
-                        - opt: Virágcsokor
-                        - opt: Vonat
-                        - opt: Vödör (kék)
-                        - opt: Vödör (piros)
-                        - opt: Zászló
-                        - opt: Zsiráf
+    - opt: Alma
+    - opt: Asztal
+    - opt: Autó
+    - opt: Auró (Bogár)
+    - opt: Ásó
+    - opt: Baba
+    - opt: Babakocsi
+    - opt: Bagoly
+    - opt: Banán
+    - opt: Bárány
+    - opt: Béka
+    - opt: Bicikli
+    - opt: Bohóc
+    - opt: Bohóchal
+    - opt: Boríték
+    - opt: Bögre
+    - opt: Busz (kék)
+    - opt: Busz (sárga)
+    - opt: Bűvös kocka
+    - opt: Barna ceruza
+    - opt: Piros ceruza
+    - opt: Cica
+    - opt: Fekete cica
+    - opt: Cipő
+    - opt: Csákó
+    - opt: Csengő
+    - opt: Cseresznye
+    - opt: Csesze
+    - opt: Csibe
+    - opt: Csiga
+    - opt: Csikóhal
+    - opt: Csillag
+    - opt: Csizma
+    - opt: Csónak
+    - opt: Delfin
+    - opt: Dinó
+    - opt: Dinnye
+    - opt: Dió
+    - opt: Dob
+    - opt: Dobókocka
+    - opt: Dominó
+    - opt: Dömper
+    - opt: Ecset
+    - opt: Egér
+    - opt: Elefánt
+    - opt: Elemlámpa
+    - opt: Eper
+    - opt: Esernyő
+    - opt: Építőkocka
+    - opt: Fa
+    - opt: Fagyi
+    - opt: Falevél
+    - opt: Fecske
+    - opt: Felhő
+    - opt: Fenyőfa
+    - opt: Festőpaletta
+    - opt: Fésű
+    - opt: Focilabda
+    - opt: Fogkefe
+    - opt: Fűnyíró
+    - opt: Gereblye
+    - opt: Gitár
+    - opt: Gomb
+    - opt: Gomba
+    - opt: Gólya
+    - opt: Gőzhajó
+    - opt: Gyertya
+    - opt: Gyöngysor
+    - opt: Gyűrű
+    - opt: Hajó
+    - opt: Halacska
+    - opt: Harang
+    - opt: Harkály
+    - opt: Házikó
+    - opt: Helik- opter
+    - opt: Hintaló
+    - opt: Hold
+    - opt: Hóember
+    - opt: Hópehely
+    - opt: Hóvirág
+    - opt: Hőlégballon
+    - opt: Ibolya
+    - opt: Indián
+    - opt: Iskolatáska
+    - opt: Kacsa
+    - opt: Kakas
+    - opt: Kalap
+    - opt: Kalapács
+    - opt: Kamion
+    - opt: Kanál
+    - opt: Kancsó
+    - opt: Karika
+    - opt: Két karika
+    - opt: Katica
+    - opt: Kendő
+    - opt: Kerék
+    - opt: Kerítés
+    - opt: Kesztyű
+    - opt: Kifli
+    - opt: Kícsó
+    - opt: Kocka
+    - opt: Kombájn
+    - opt: Korona
+    - opt: Kosár
+    - opt: Kosárlabda
+    - opt: Könyv
+    - opt: Körte
+    - opt: Közlekedési lámpa
+    - opt: Kulcs
+    - opt: Kutya
+    - opt: Labda
+    - opt: Létra
+    - opt: Locsolókanna
+    - opt: Lovacska
+    - opt: Lóhere
+    - opt: Lufi
+    - opt: Maci
+    - opt: Macifejek
+    - opt: Madár
+    - opt: Madáretető
+    - opt: Makk
+    - opt: Malac
+    - opt: Markoló
+    - opt: Masni
+    - opt: Málna
+    - opt: Méhecske
+    - opt: Mérleghinta
+    - opt: Mikulás
+    - opt: Mosógép
+    - opt: Motor
+    - opt: Mozdony
+    - opt: Mókus
+    - opt: Nadrág
+    - opt: Napocska
+    - opt: Napraforgó
+    - opt: Narancs
+    - opt: Nyuszi
+    - opt: Olló
+    - opt: Oroszlán
+    - opt: Ostor
+    - opt: Óra
+    - opt: Őszibarack
+    - opt: Papírsárkány
+    - opt: Perec
+    - opt: Pillangó
+    - opt: Pohár
+    - opt: Postaláda
+    - opt: Rakéta
+    - opt: Repülő
+    - opt: Roller
+    - opt: Rózsa
+    - opt: Ruha
+    - opt: Sajt
+    - opt: Sapka
+    - opt: Sál
+    - opt: Sárgarépa
+    - opt: Söprű
+    - opt: Süni
+    - opt: Szaloncukor
+    - opt: Számológép
+    - opt: Szánkó
+    - opt: Szemüveg
+    - opt: Szék
+    - opt: Szélmalom
+    - opt: Szilva
+    - opt: Szivárvány
+    - opt: Szív
+    - opt: Két szív
+    - opt: Szoknya
+    - opt: Szőlő (kék)
+    - opt: Szőlő (zöld)
+    - opt: Talicska
+    - opt: Táska
+    - opt: Teknős
+    - opt: Telefon
+    - opt: Televízió
+    - opt: Teniszütő
+    - opt: Terepjáró
+    - opt: Tojás
+    - opt: Torta
+    - opt: Traktor
+    - opt: Trombita
+    - opt: Tulipán
+    - opt: Tünder
+    - opt: Tűzoltó
+    - opt: Űrhajó
+    - opt: Varázspálca
+    - opt: Vasaló
+    - opt: Vár
+    - opt: Váza
+    - opt: Villa
+    - opt: Villám
+    - opt: Virág
+    - opt: Virág cserépben
+    - opt: Virág szárral
+    - opt: Virágcsokor
+    - opt: Vonat
+    - opt: Vödör (kék)
+    - opt: Vödör (piros)
+    - opt: Zászló
+    - opt: Zsiráf
 ---
