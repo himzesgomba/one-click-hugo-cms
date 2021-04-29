@@ -12,7 +12,7 @@ export default class ReferenciakPreview extends React.Component {
         <p>Eddigi munkáink közül néhány:</p>
        </div>
     </section>
-    <ImageGrid galleries={entry.getIn(["data", "galleries"])} />
+    <ImageGrid galleries={entry.getIn(["data", "galleries"])} getAsset={getAsset} />
     </div>;
   }
 }

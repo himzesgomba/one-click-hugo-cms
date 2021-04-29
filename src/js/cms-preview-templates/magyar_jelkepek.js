@@ -14,7 +14,7 @@ export default class MagyarJelkepekPreview extends React.Component {
             <h5>Árainkat ÁFA nem terheli.</h5>
         </div>
         </section>
-        <ImageGrid galleries={entry.getIn(["data", "galleries"])} />
+        <ImageGrid galleries={entry.getIn(["data", "galleries"])} getAsset={getAsset} />
     </div>;
   }
 }
