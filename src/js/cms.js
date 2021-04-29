@@ -5,16 +5,17 @@ import CMS from "netlify-cms-app";
 import styles from "!to-string-loader!css-loader!postcss-loader!sass-loader!../css/main.css";
 
 import TarisznyaPreview from "./cms-preview-templates/tarisznya";
-import PostPreview from "./cms-preview-templates/post";
-import ProductsPreview from "./cms-preview-templates/products";
-import ValuesPreview from "./cms-preview-templates/values";
-import ContactPreview from "./cms-preview-templates/contact";
+import EgyebTermekekPreview from "./cms-preview-templates/egyeb_termekek";
+import CimerekPreview from "./cms-preview-templates/cimerek";
+import MagyarJelkepekPreview from "./cms-preview-templates/magyar_jelkepek";
+import ReferenciakPreview from "./cms-preview-templates/referenciak";
+import AjanlatkeresPreview from "./cms-preview-templates/ajanlatkeres";
 
 CMS.registerPreviewStyle(styles, { raw: true });
 CMS.registerPreviewTemplate("tarisznya", TarisznyaPreview);
-CMS.registerPreviewTemplate("egyeb_termekek", PostPreview);
-CMS.registerPreviewTemplate("cimerek", ProductsPreview);
-CMS.registerPreviewTemplate("magyar_jelkepek", ValuesPreview);
-CMS.registerPreviewTemplate("referenciak", ContactPreview);
-CMS.registerPreviewTemplate("ajanlatkeres", ContactPreview);
+CMS.registerPreviewTemplate("egyeb_termekek", EgyebTermekekPreview);
+CMS.registerPreviewTemplate("cimerek", CimerekPreview);
+CMS.registerPreviewTemplate("magyar_jelkepek", MagyarJelkepekPreview);
+CMS.registerPreviewTemplate("referenciak", ReferenciakPreview);
+CMS.registerPreviewTemplate("ajanlatkeres", AjanlatkeresPreview);
 CMS.init();
