@@ -1,8 +1,6 @@
 import React from "react";
 import { List } from 'immutable';
 
-import Jumbotron from "./components/jumbotron";
-
 const MediaBlock = ({heading, text, imageUrl, reverse}) => {
   const imageContainerClassName = reverse
     ? "ph3-m w-50-m"
@@ -33,7 +31,6 @@ export default class ValuesPreview extends React.Component {
     const values = entryValues ? entryValues.toJS() : [];
     
     return <div>
-      <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
       <div className="bg-off-white pv4">
         <div className="mw7 center ph3 pt4">
           {values.map(({text, heading, imageUrl}, i) =>
