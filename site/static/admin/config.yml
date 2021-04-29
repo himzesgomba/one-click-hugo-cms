@@ -7,78 +7,159 @@ public_folder: "img"
 local_backend: true
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "site/content/post" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
-    label: "Pages"
+    label: "Oldalak"
     files:
-      - file: "site/content/_index.md"
-        label: "Home Page"
-        name: "home"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Products", name: products, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image}
-          - {label: Body, name: body, widget: markdown}
-          - label: Contact Entries
-            name: contact_entries
-            widget: list
-            fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Text
-                name: text
-                widget: text
       - file: "site/content/tarisznya/_index.md"
-        label: "Tarisznya Oldal"
+        label: "Tarisznyák"
         name: "tarisznya"
         fields:
-          - {label: Termékkategória neve, name: title, widget: string}
-          - {label: Termék ára, name: image, widget: image}
-          - {label: Borítókép, name: heading, widget: string}
-          - {label: Képek, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
+          - {label: Cim, name: title, widget: string}
+          - label: Galléria kategória
+            name: galleries
             widget: list
             fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Ár
+                name: price
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: thumb
+                    widget: image
+                  - label: Nagy kép
+                    name: img
+                    widget: image
+      - file: "site/content/cimerek/_index.md"
+        label: "Címerek"
+        name: "cimerek"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Galléria kategória
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Ár
+                name: price
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: thumb
+                    widget: image
+                  - label: Nagy kép
+                    name: img
+                    widget: image
+      - file: "site/content/magyar_jelkepek/_index.md"
+        label: "Magyar jelképek"
+        name: "magyar_jelkepek"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Galléria kategória
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Ár
+                name: price
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: thumb
+                    widget: image
+                  - label: Nagy kép
+                    name: img
+                    widget: image
+      - file: "site/content/egyeb_termekek/_index.md"
+        label: "Egyéb termekek"
+        name: "egyeb_termekek"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Galleria kategória
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Ár
+                name: price
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: thumb
+                    widget: image
+                  - label: Nagy kép
+                    name: img
+                    widget: image
+      - file: "site/content/referenciak/_index.md"
+        label: "Referenciák"
+        name: "referenciak"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Galléria kategória
+            name: galleries
+            widget: list
+            fields:
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: thumb
+                    widget: image
+                  - label: Nagy kép
+                    name: img
+                    widget: image
+      - file: "site/content/ajanlatkeres/_index.md"
+        label: "Árajánlatkérés"
+        name: "ajanlatkeres"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Saját termékek listája
+            name: lehetosegek
+            widget: list
+            fields:
+              - label: Saját termékek listája
+                name: opcio
+                widget: string
+          - label: Óvodai jelek listája
+            name: ovodaijelek
+            widget: list
+            fields:
+              - label: Óvodai jelek listája
+                name: opt
+                widget: string
