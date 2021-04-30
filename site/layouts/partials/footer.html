@@ -28,20 +28,5 @@
 {{ $app := .Site.Data.webpack.app }} 
 {{ with $app.js }}
 <script src="{{ relURL . }}"></script>
-<script>
-    document.getElementById('ovoda').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'none';
-        document.getElementById('ovodaiselect').style.display = 'block';
-    });
 
-    document.getElementById('termek').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'block';
-        document.getElementById('ovodaiselect').style.display = 'none';
-    });
-
-    document.getElementById('sajat').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'none';
-        document.getElementById('ovodaiselect').style.display = 'none';
-    });
-</script>
 {{ end }}

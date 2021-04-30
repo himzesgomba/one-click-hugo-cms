@@ -266,6 +266,73 @@ body {
     box-shadow: 1px 1px 1px black;
     text-shadow: 2px 2px 2px #333;
 }
+
+/*Árak része*/
+
+#arak .arak-header {
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    padding-top: 150px;
+    max-width: 100%;
+}
+
+#arak .arak-header h2 {
+    margin-bottom: 30px;
+    margin: 0;
+    color: #a48d64;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+#arak .arak-header p {
+    color: #a48d64;
+    font-size: 1rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300px;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+#arak .arak-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.arak-text {
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    background-color: #a48d64;
+    margin-bottom: 40px;
+}
+
+.arak-text h4 {
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+
+#arak .bemutat-text {
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+
+
 /*Bemutatkozás rész*/
 
 #bemutat {
@@ -1175,21 +1242,39 @@ form h6 {
         margin: 20px;
     }
     .index-gallery>.gallery-image {
-        flex: 30%;
+        flex: 20%;
         height: 20rem;
     }
     .referenc-gallery>.referenc-image {
-        flex: 30%;
+        flex: 20%;
         height: 20rem;
     }
     .magyar-gallery>a {
-        flex: 30%;
+        flex: 20%;
         height: 20rem;
     }
     .cimer-gallery>a {
-        flex: 30%;
+        flex: 20%;
         height: 20rem;
     }
+    .arak-container {
+        position: relative;
+        min-height: 100vh;
+        padding: 50px;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    #arak .arak-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    #arak .bemutat-text {
+        padding-left: 30px;
+    }
+
     #ajanlat {
         position: relative;
         min-height: 100vh;

@@ -31,14 +31,14 @@ export default class AjanlatkeresPreview extends React.Component {
                     <input type="radio" class="ovoda" id="ovoda" name="valasztas"/><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
                 </div>
                 <div class="inputBox">
-                    <select class="option" name="szolgaltatas" id="egyebselect" multiple style="display:block">
+                    <select class="option" name="szolgaltatas" id="egyebselect" style={{display: "block"}} multiple>
                         <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
                         {(entry.getIn(['data', 'lehetosegek']) || []).map((lehetoseg, i) => 
                             <option key={i}>{lehetoseg.get('opcio') }</option>)}
                     </select>
                 </div>
                 <div class="inputBox">
-                    <select class="opovoda" name="szolgaltatas" id="ovodaiselect" multiple style="display:block">
+                    <select class="opovoda" name="szolgaltatas" id="ovodaiselect" style={{display: "block"}} multiple>
                         <option disabled="disabled" selected="celected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
                         {(entry.getIn(['data', 'ovodaijelek']) || []).map((lehetoseg, i) => 
                             <option key={i}>{lehetoseg.get('opt') }</option>)}
