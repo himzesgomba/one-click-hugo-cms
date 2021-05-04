@@ -33,7 +33,7 @@ galleries:
         img: /img/cimer_arany_24cm.jpg
   - title: Felvarrható magyar címer, aranysárga cérnával (5,5 cm)
     price: 400 Ft/db
-    backgroundimage: /img/címer_sárga_5,5cm.jpg
+    backgroundimage: /img/cimer_sarga_5,5cm.jpg
     images: 
       - thumb: /img/címer_sárga_5,5cm.jpg
         img: /img/címer_sárga_5,5cm.jpg
