@@ -186,7 +186,7 @@ body {
 /*Főoldal része*/
 
 #hero {
-    background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+    background-image: url(/img/ovodai_borito.jpg);
     background-size: cover;
     background-position: top left;
     position: relative;
@@ -1224,7 +1224,7 @@ form h6 {
         display: none;
     }
     #hero {
-        background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+        background-image: url(/img/ovodai_borito.jpg);
         background-size: cover;
     }
     #hero h1 {
@@ -1259,7 +1259,6 @@ form h6 {
     }
     .arak-container {
         position: relative;
-        min-height: 100vh;
         padding: 50px;
         padding-top: 50px;
         display: flex;
@@ -1277,7 +1276,6 @@ form h6 {
 
     #ajanlat {
         position: relative;
-        min-height: 100vh;
         padding: 50px;
         padding-top: 50px;
         display: flex;
