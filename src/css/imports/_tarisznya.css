@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Nunito:wght@200&family=Pangolin&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +7,9 @@
 
 html {
     font-size: 20px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Itim', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Pangolin', cursive;
     scroll-behavior: smooth;
     background-color: white;
 }
@@ -76,6 +78,18 @@ body {
     transition: .5s ease left;
 }
 
+#header .himzes{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    background-color: #0a434c
+}
+
 #header .dropdown {
     display: none;
     list-style: none;
@@ -87,7 +101,7 @@ body {
 }
 
 .show {
-    display:block;
+    display: block;
 }
 
 /*#header ul li:active .dropdown {
@@ -299,7 +313,7 @@ body {
     position: relative;
     min-height: 100vh;
     padding: 30px;
-    padding-top: 100px;
+    padding-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,10 +324,10 @@ body {
 
 #arak .arak-header {
     margin: 0;
+    padding-top: 90px;
     padding: 20px;
     max-width: 100%;
     color: white;
-    padding-top: 50px;
 }
 
 #arak .arak-header h2 {
