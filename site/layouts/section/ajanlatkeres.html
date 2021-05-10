@@ -1,3 +1,7 @@
+{{ define "head" }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/css/multi-select.min.css" integrity="sha512-3lMc9rpZbcRPiC3OeFM3Xey51i0p5ty5V8jkdlNGZLttjj6tleviLJfHli6p8EpXZkCklkqNt8ddSroB3bvhrQ==" crossorigin="anonymous" />
+{{ end }}
+
 {{ define "main" }}
 
 <section id="ajanlat">
@@ -23,21 +27,21 @@
                     <span>Telefonszám</span>
                 </div>
                 <div class="inputBox">
-                    <input type="radio" class="sajat" id="sajat" name="valasztas"><label for="sajat">Saját mintát szeretnék hímeztetni</label>
-                    <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek">A termékek közül szeretnék választani</label>
-                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
+                    <input type="radio" class="sajat" id="sajat" name="valasztas"><label for="sajat">Saját mintát szeretnék hímeztetni</label><br/>
+                    <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek">A termékek közül szeretnék választani</label><br/>
+                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda">Az óvodai jelek közül szeretnék választani</label><br/>
                 </div>
                 <div class="inputBox">
-                    <select class="option" name="szolgaltatas" id="egyebselect" multiple>
-                        <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                    <select class="option" name="szolgaltatas[]" id="egyebselect" multiple>
+                        <option disabled="disabled" selected="selected"><span></span></option>
                         {{ range .Params.lehetosegek }}
                             <option>{{ .opcio }}</option>
                         {{end}} 
                         </select>
                 </div>
                 <div class="inputBox">
-                    <select class="opovoda" name="szolgaltatas" id="ovodaiselect" multiple>
-                        <option disabled="disabled" selected="celected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                    <select class="opovoda" name="szolgaltatas[]" id="ovodaiselect" multiple>
+                        <option disabled="disabled" selected="selected"><span></span></option>
                         {{ range .Params.ovodaijelek }}
                             <option>{{ .opt }}</option>
                         {{end}} 
@@ -90,5 +94,51 @@
         </div>
     </div>
 </section>
-
 {{end}}
+
+{{ define "js" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/multi-select/0.9.12/js/jquery.multi-select.min.js" integrity="sha512-vSyPWqWsSHFHLnMSwxfmicOgfp0JuENoLwzbR+Hf5diwdYTJraf/m+EKrMb4ulTYmb/Ra75YmckeTQ4sHzg2hg==" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('ovoda').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'none';
+        document.getElementById('ovodaiselect').style.display = 'block';
+    });
+
+    document.getElementById('termek').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'block';
+        document.getElementById('ovodaiselect').style.display = 'none';
+    });
+
+    document.getElementById('sajat').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'none';
+        document.getElementById('ovodaiselect').style.display = 'none';
+    });
+    
+    $(() => {
+      $('#egyebselect').multiSelect();
+      $('#ovodaiselect').multiSelect();
+    });
+    
+
+        /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myDrop() {
+        console.log(42)
+        document.getElementById("drop_menu").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.himzes')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+</script>
+{{ end }}

@@ -93,7 +93,6 @@ body {
 #header .dropdown {
     display: none;
     list-style: none;
-    position: absolute;
     z-index: 1;
     justify-content: center;
     margin-left: 50px;
@@ -104,13 +103,6 @@ body {
     display: block;
 }
 
-/*#header ul li:hover .dropdown {
-    display: block;
-    background: #0a434c;
-    margin-left: 50px;
-    list-style: none;
-    justify-content: center;
-}*/
 
 #header ul li ul {
     list-style: none;
@@ -137,11 +129,11 @@ body {
 }
 
 #header .nav-list ul a:hover {
-    color: white;
+    color:  #9c1414;
 }
 
 #header .nav-list ul .himzes:hover {
-    color: white;
+    color: #9c1414;
 }
 
 #header .menu {
@@ -941,8 +933,7 @@ body {
     margin-top: 10px;
 }
 
-.contactForm .inputBox input,
-.contactForm .inputBox select,
+.contactForm .kerdo,
 .contactForm .inputBox textarea {
     width: 100%;
     padding: 5px 0;
@@ -964,7 +955,7 @@ body {
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: black;
+    color: #0a434c;
     margin-left: 5px;
 }
 
@@ -1003,7 +994,7 @@ form ol {
     padding-left: 0;
 }
 
-form li,
+/*form li,
 div>h6 {
     background: #0a434c;
     display: flex;
@@ -1011,7 +1002,7 @@ div>h6 {
     list-style-type: none;
     color: white;
     font-size: 16px;
-}
+}*/
 
 form h6 {
     line-height: 32px;
@@ -1347,12 +1338,19 @@ form h6 {
     #header .nav-list ul li {
         display: inline-block;
     }
-    /*#header ul li:hover .dropdown {
-        display: block;
+
+    #header .dropdown{
         width: 400px;
         margin-left: 0;
         position: absolute;
-    }*/
+    }
+
+    #header .himzes{
+        font-size: 0.6rem;
+        letter-spacing: 0.1rem;
+        font-weight: bold;
+    }
+
     #header .nav-list ul li a {
         font-size: 0.6rem;
         font-weight: bold;

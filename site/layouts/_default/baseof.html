@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="hu">
+<head>
 {{ partial "head" . }}
+{{ block "head" . }}{{ end }}
+</head>
 <body class="sans-serif">
 
   {{ block "header" . }}
@@ -14,5 +17,6 @@
   {{ with $script.js }}
   <script src="{{ relURL . }}"></script>
   {{ end }}
+  {{ block "js" . }}{{ end }}
 </body>
 </html>

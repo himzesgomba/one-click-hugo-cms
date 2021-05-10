@@ -29,7 +29,7 @@
                 </div>
                 <div class="inputBox">
                     <select class="option" name="szolgaltatas" id="egyebselect" multiple>
-                        <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        <option disabled="disabled" selected="selected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
                         {{ range .Params.lehetosegek }}
                             <option>{{ .opcio }}</option>
                         {{end}} 
@@ -37,7 +37,7 @@
                 </div>
                 <div class="inputBox">
                     <select class="opovoda" name="szolgaltatas" id="ovodaiselect" multiple>
-                        <option disabled="disabled" selected="celected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        <option disabled="disabled" selected="selected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
                         {{ range .Params.ovodaijelek }}
                             <option>{{ .opt }}</option>
                         {{end}} 

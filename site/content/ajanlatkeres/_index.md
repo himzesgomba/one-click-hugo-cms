@@ -91,7 +91,7 @@ ovodaijelek:
     - opt: Alma
     - opt: Asztal
     - opt: Autó
-    - opt: Auró (Bogár)
+    - opt: Autó (Bogár)
     - opt: Ásó
     - opt: Baba
     - opt: Babakocsi
@@ -115,7 +115,7 @@ ovodaijelek:
     - opt: Csákó
     - opt: Csengő
     - opt: Cseresznye
-    - opt: Csesze
+    - opt: Csésze
     - opt: Csibe
     - opt: Csiga
     - opt: Csikóhal
@@ -162,7 +162,7 @@ ovodaijelek:
     - opt: Harang
     - opt: Harkály
     - opt: Házikó
-    - opt: Helik- opter
+    - opt: Helikopter
     - opt: Hintaló
     - opt: Hold
     - opt: Hóember
@@ -187,7 +187,7 @@ ovodaijelek:
     - opt: Kerítés
     - opt: Kesztyű
     - opt: Kifli
-    - opt: Kícsó
+    - opt: Kígyó
     - opt: Kocka
     - opt: Kombájn
     - opt: Korona
@@ -271,7 +271,7 @@ ovodaijelek:
     - opt: Traktor
     - opt: Trombita
     - opt: Tulipán
-    - opt: Tünder
+    - opt: Tündér
     - opt: Tűzoltó
     - opt: Űrhajó
     - opt: Varázspálca
