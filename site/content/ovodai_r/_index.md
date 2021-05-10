@@ -2,9 +2,9 @@
 title: Óvodai jelek - R
 galleries:
   - title: Rakéta
-    backgroundimage: /img/raketa.jpg
+    backgroundimage: /img/urhajo.jpg
     images: 
-      - img: /img/raketa.jpg
+      - img: /img/urhajo.jpg
   - title: Repülő
     backgroundimage: /img/repulo.jpg
     images: 

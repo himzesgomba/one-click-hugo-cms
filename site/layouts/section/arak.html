@@ -8,13 +8,9 @@
     <div class="arak-container">
         <div class="arak-text">
             <h4>Óvodai jelek árai:</h4>
-            <p>1 db 5x5 cm-es jel: <b>220 Ft</b></p>
-            <p>1 db 10x10 cm-es jel: <b>600 Ft</b></p>
-            <p>5 db 3x3 cm-es egyforma jel
-                egy csomagban: <b>500 Ft</b> (4 csomagtól: 450 Ft)</p>
-            <p>5 db egyforma, 5x5 cm-es jel
-                egy csomagban: <b>1000 Ft</b></p>
-            <p>1 db 5x5 cm-es jel: <b>220 Ft</b></p>
+            {{ range .Params.arak_text }}
+                <p>{{ .arak }}</p>
+            {{end}}
         </div>
         <div class="bemutat-text">
             <p>Óvodai csoportok számára lehetőséget biztosítunk fajtánként 1-2 db jel vásárlására is, ezesetben a jelek ára 120 Ft/db (3x3 cm).</p>

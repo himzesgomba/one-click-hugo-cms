@@ -28,7 +28,7 @@ body {
 
 #header .header {
     min-height: 8vh;
-    background-color: #a48d64;
+    background-color: #0a434c;
     transition: .3s ease background-color;
 }
 
@@ -64,7 +64,7 @@ body {
 #header .nav-list>ul {
     list-style: none;
     position: absolute;
-    background-color: #a48d64;
+    background-color: #0a434c;
     width: 100vw;
     height: 100vh;
     left: 100%;
@@ -78,14 +78,25 @@ body {
 
 #header .dropdown {
     display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 50px;
+    background: #0a434c;
 }
 
-#header ul li:hover .dropdown {
+.show {
+    display:block;
+}
+
+/*#header ul li:active .dropdown {
     display: block;
-    background: #a48d64;
+    background: #0a434c;
     margin-left: 50px;
     list-style: none;
-}
+    justify-content: center;
+}*/
 
 #header ul li ul {
     list-style: none;
@@ -112,7 +123,7 @@ body {
 }
 
 #header .nav-list ul a:hover {
-    color: #575046;
+    color: white;
 }
 
 #header .nav-list ul .himzes:hover {
@@ -205,6 +216,24 @@ body {
     align-items: center;
 }
 
+#hero .hero-keret{
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+#hero .hero-keret::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .6;
+    z-index: -1;
+}
+
 #hero h1 {
     margin: auto;
     display: block;
@@ -213,49 +242,46 @@ body {
     position: relative;
     margin-bottom: 10px;
     text-align: center;
-    color: white;
+    color: #0a434c;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px #333;
     font-weight: 600;
 }
 
 #hero hr {
-    border-color: white;
+    border-color: #0a434c;
 }
 
 #hero h2 {
     display: block;
     width: fit-content;
     font-size: 0.9rem;
-    color: white;
+    color: #0a434c;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    text-shadow: 2px 2px 2px #333;
 }
 
 #hero h3 {
     display: block;
     width: fit-content;
     font-size: 0.9rem;
-    color: white;
+    color: #0a434c;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 500;
     margin-top: 40px;
-    text-shadow: 2px 2px 2px #333;
 }
 
 #hero .call {
     display: inline-block;
     padding: 10px 30px;
     color: white;
-    background-color: #a48d64;
+    background-color: #9c1414;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -269,28 +295,42 @@ body {
 
 /*Árak része*/
 
+#arak {
+    position: relative;
+    min-height: 100vh;
+    padding: 30px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url("/img/ovodai_boritoenyhe.jpg");
+    background-size: cover;
+}
+
 #arak .arak-header {
-    background-color: white;
     margin: 0;
     padding: 20px;
-    padding-top: 150px;
     max-width: 100%;
+    color: white;
+    padding-top: 50px;
 }
 
 #arak .arak-header h2 {
     margin-bottom: 30px;
     margin: 0;
-    color: #a48d64;
+    color: white;
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: .2rem;
+    padding-top: 100px;
 }
 
 #arak .arak-header p {
-    color: #a48d64;
+    color: white;
     font-size: 1rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -311,7 +351,7 @@ body {
     width: 100%;
     padding: 30px;
     justify-content: center;
-    background-color: #a48d64;
+    background-color: #0a434c;
     margin-bottom: 40px;
 }
 
@@ -323,20 +363,61 @@ body {
     text-transform: uppercase;
 }
 
+.arak-text p {
+    color: white;
+    margin: 5px;
+}
+
+.bemutat-text a{
+    display: inline-block;
+    color: white;
+    background-color: #9c1414;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    transition: .5s ease;
+    transition-property: background-color, color;
+    margin: 5px;
+    box-shadow: 1px 1px 1px black;
+    text-shadow: 2px 2px 2px #333;
+    text-align: center;
+    margin-top: 35px;
+    padding: 10px;
+}
+
 
 #arak .bemutat-text {
-    color: black;
+    color: #0a434c;
     width: 100%;
     display: flex;
     flex-direction: column;
     left: 0;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+#arak .bemutat-text p{
+    margin: 4px;
+}
+
+#arak .bemutat-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .4;
+    z-index: -1;
 }
 
 
 /*Bemutatkozás rész*/
 
 #bemutat {
-    background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+    background-image: url(/img/ovodai_borito.jpg);
     background-size: cover;
     width: 100%;
     padding: 150px 20px;
@@ -417,7 +498,7 @@ body {
 #references .references-header h2 {
     margin-bottom: 30px;
     margin: 0;
-    color: #a48d64;
+    color: #0a434c;
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
@@ -427,7 +508,7 @@ body {
 }
 
 #references .references-header p {
-    color: #a48d64;
+    color: #0a434c;
     font-size: 1rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -437,7 +518,7 @@ body {
 }
 
 #references h5 {
-    color: #a48d64;
+    color: #0a434c;
     font-size: 0.7rem;
     line-height: 2.5rem;
     font-weight: 300px;
@@ -446,7 +527,7 @@ body {
 }
 
 #references hr {
-    border-color: #a48d64;
+    border-color: #0a434c;
     fill: #a48d64;
 }
 /*Referenciák*/
@@ -460,8 +541,8 @@ body {
 }
 
 .referenc-gallery>.referenc-image {
-    flex: 60%;
-    height: 20rem;
+    flex: 20%;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -538,8 +619,8 @@ body {
 }
 
 .cimer-gallery>a {
-    flex: 60%;
-    height: 20rem;
+    flex: 20%;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -592,8 +673,8 @@ body {
 }
 
 .magyar-gallery>a {
-    flex: 60%;
-    height: 20rem;
+    flex: 20%;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -644,11 +725,13 @@ body {
     align-items: center;
     align-content: center;
     margin: 50px;
+    justify-content: center;
 }
 
 .index-gallery>.gallery-image {
-    flex: 60%;
-    height: 20rem;
+    flex: 40%;
+    height: 10rem;
+    max-width: 10rem;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -790,7 +873,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url("/img/embroidery-3719464_1280_barna.jpg");
+    background: url("/img/ovodai_boritoenyhe.jpg");
     background-size: cover;
 }
 
@@ -826,7 +909,7 @@ body {
     width: 100%;
     padding: 30px;
     justify-content: center;
-    background-color: #a48d64;
+    background-color: #0a434c;
     margin-bottom: 40px;
 }
 
@@ -888,7 +971,7 @@ body {
 
 .contactForm .inputBox input[type="file"] {
     color: white;
-    background-color: #a48d64;
+    background-color: #0a434c;
     border: white solid 3px;
     font-size: 16px;
     cursor: pointer;
@@ -908,7 +991,7 @@ form ol {
 
 form li,
 div>h6 {
-    background: #a48d64;
+    background: #0a434c;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -925,7 +1008,7 @@ form h6 {
 
 .contactForm .inputBox input[type="submit"] {
     width: 100%;
-    background: #575046;
+    background: #9c1414;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -974,12 +1057,36 @@ form h6 {
     animation: status 4s ease forwards;
 }*/
 
+#ajanlat .kapcsolat{
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    width: 100%;
+}
 #ajanlat .Ajanlatinfo {
-    color: white;
+    color: #0a434c;
     width: 100%;
     display: flex;
     flex-direction: column;
     left: 0;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+#ajanlat .Ajanlatinfo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: .4;
+    z-index: -1;
 }
 
 #ajanlat .Ajanlatinfo h1 {
@@ -998,20 +1105,37 @@ form h6 {
 #ajanlat .Ajanlatinfo p {
     font-size: 0.9rem;
 }
-/*Kapcsolat infók*/
 
-#contact {
-    position: relative;
-    min-height: 100vh;
-    padding: 30px;
-    padding-top: 50px;
+#ajanlat .contactInfo {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    background: url("/img/embroidery-3719464_1280_barna.jpg");
-    background-size: cover;
+    left: 0;
+    color: white;
+    margin-top: 50px;
+    font-weight: 700;
 }
+
+#ajanlat .icon {
+    display: flex;
+}
+
+#ajanlat .icon span {
+    margin-left: 10px;
+}
+
+#ajanlat .contactInfo .contactmode {
+    display: inline;
+}
+
+#ajanlat .contactInfo p {
+    position: relative;
+    display: flex;
+    left: 37px;
+    color: white;
+    margin-bottom: 30px;
+}
+/*Kapcsolat infók*/
 
 #contact .contact-header {
     max-width: 800px;
@@ -1092,7 +1216,7 @@ form h6 {
 /*Footer*/
 
 #footer {
-    background-color: #a48d64;
+    background-color: #0a434c;
 }
 
 #footer .footer {
@@ -1145,12 +1269,12 @@ form h6 {
     font-size: 0.5rem;
     margin-top: 5px;
     text-align: center;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
 }
 
 @media only screen and (min-width: 768px) {
     #hero {
-        background-image: url(/img/embroidery-3719464_1280_barna.jpg);
+        background-image: url(/img/ovodai_borito.jpg);
         background-position: top center;
         padding-top: 50px;
     }
@@ -1172,20 +1296,20 @@ form h6 {
         margin: 20px;
     }
     .index-gallery>.gallery-image {
-        flex: 40%;
-        height: 20rem;
+        flex: 20%;
+        height: 10rem;
     }
     .referenc-gallery>.referenc-image {
-        flex: 40%;
-        height: 20rem;
+        flex: 20%;
+        height: 10rem;
     }
     .magyar-gallery>a {
-        flex: 40%;
-        height: 20rem;
+        flex: 20%;
+        height: 10rem;
     }
     .cimer-gallery>a {
-        flex: 40%;
-        height: 20rem;
+        flex: 20%;
+        height: 10rem;
     }
 }
 
@@ -1209,12 +1333,12 @@ form h6 {
     #header .nav-list ul li {
         display: inline-block;
     }
-    #header ul li:hover .dropdown {
+    /*#header ul li:active .dropdown {
         display: block;
-        width: 150px;
+        width: 400px;
         margin-left: 0;
         position: absolute;
-    }
+    }*/
     #header .nav-list ul li a {
         font-size: 0.6rem;
         font-weight: bold;
@@ -1242,36 +1366,36 @@ form h6 {
         margin: 20px;
     }
     .index-gallery>.gallery-image {
-        flex: 20%;
-        height: 20rem;
+        flex: 10%;
+        height: 10rem;
     }
     .referenc-gallery>.referenc-image {
-        flex: 20%;
-        height: 20rem;
+        flex: 10%;
+        height: 10rem;
     }
     .magyar-gallery>a {
-        flex: 20%;
-        height: 20rem;
+        flex: 10%;
+        height: 10rem;
     }
     .cimer-gallery>a {
-        flex: 20%;
-        height: 20rem;
+        flex: 10%;
+        height: 10rem;
     }
-    .arak-container {
+    #arak {
         position: relative;
-        padding: 50px;
-        padding-top: 50px;
         display: flex;
         justify-content: center;
-        align-items: center;  
+        align-items: center;
+        padding-top: 0;
     }
+
     #arak .arak-container {
         justify-content: center;
         align-items: center;
         flex-direction: row;
     }
     #arak .bemutat-text {
-        padding-left: 30px;
+        margin-left: 50px;
     }
 
     #ajanlat {
@@ -1288,23 +1412,19 @@ form h6 {
         flex-direction: row;
     }
     #ajanlat .Ajanlatinfo {
-        padding-left: 30px;
+        margin-left: 30px;
     }
     #ajanlat .contactInfo {
         display: flex;
-        padding-left: 250px;
+        padding-left: 30px;
     }
     #contact {
         position: relative;
         min-height: 100vh;
         padding: 50px;
         display: flex;
-        justify-content: center;
-        align-items: center;
     }
     #contact .contact-container {
-        justify-content: center;
-        align-items: center;
         flex-direction: row;
     }
     #contact .contact-container .map iframe {
@@ -1313,6 +1433,5 @@ form h6 {
     }
     #contact .contactInfo {
         display: flex;
-        padding-left: 200px;
     }
 }

@@ -42,9 +42,9 @@ galleries:
     images: 
       - img: /img/katica.jpg
   - title: Kendő
-    backgroundimage: /img/kendő.jpg
+    backgroundimage: /img/kendo.jpg
     images: 
-      - img: /img/kendő.jpg
+      - img: /img/kendo.jpg
   - title: Kerék
     backgroundimage: /img/kerek.jpg
     images: 

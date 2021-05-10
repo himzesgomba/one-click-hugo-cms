@@ -10,21 +10,18 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Oldalak"
     files:
-      - file: "site/content/tarisznya/_index.md"
-        label: "Tarisznyák"
-        name: "tarisznya"
+      - file: "site/content/ovodai_aa/_index.md"
+        label: "Óvodai jelek - A, Á"
+        name: "ovodai_aa"
         fields:
           - {label: Cim, name: title, widget: string}
-          - label: Galléria kategória
+          - label: Óvodai jel kategóriája
             name: galleries
             widget: list
             fields:
               - label: Termék neve
                 name: title
                 widget: string
-              - label: Ár
-                name: price
-                widget: string
               - label: Háttérkép
                 name: backgroundimage
                 widget: image
@@ -33,26 +30,20 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - label: Kis kép
-                    name: thumb
-                    widget: image
-                  - label: Nagy kép
                     name: img
                     widget: image
-      - file: "site/content/cimerek/_index.md"
-        label: "Címerek"
-        name: "cimerek"
+      - file: "site/content/ovodai_b/_index.md"
+        label: "Óvodai jelek - B"
+        name: "ovodai_b"
         fields:
           - {label: Cim, name: title, widget: string}
-          - label: Galléria kategória
+          - label: Óvodai jel kategóriája
             name: galleries
             widget: list
             fields:
               - label: Termék neve
                 name: title
                 widget: string
-              - label: Ár
-                name: price
-                widget: string
               - label: Háttérkép
                 name: backgroundimage
                 widget: image
@@ -61,26 +52,20 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - label: Kis kép
-                    name: thumb
-                    widget: image
-                  - label: Nagy kép
                     name: img
                     widget: image
-      - file: "site/content/magyar_jelkepek/_index.md"
-        label: "Magyar jelképek"
-        name: "magyar_jelkepek"
+      - file: "site/content/ovodai_ccs/_index.md"
+        label: "Óvodai jelek - C, Cs"
+        name: "ovodai_ccs"
         fields:
           - {label: Cim, name: title, widget: string}
-          - label: Galléria kategória
+          - label: Óvodai jel kategóriája
             name: galleries
             widget: list
             fields:
               - label: Termék neve
                 name: title
                 widget: string
-              - label: Ár
-                name: price
-                widget: string
               - label: Háttérkép
                 name: backgroundimage
                 widget: image
@@ -89,25 +74,41 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - label: Kis kép
-                    name: thumb
-                    widget: image
-                  - label: Nagy kép
                     name: img
                     widget: image
-      - file: "site/content/egyeb_termekek/_index.md"
-        label: "Egyéb termekek"
-        name: "egyeb_termekek"
+      - file: "site/content/ovodai_d/_index.md"
+        label: "Óvodai jelek - D"
+        name: "ovodai_d"
         fields:
           - {label: Cim, name: title, widget: string}
-          - label: Galleria kategória
+          - label: Óvodai jel kategóriája
             name: galleries
             widget: list
             fields:
               - label: Termék neve
                 name: title
                 widget: string
-              - label: Ár
-                name: price
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_ee/_index.md"
+        label: "Óvodai jelek - E, É"
+        name: "ovodai_ee"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
                 widget: string
               - label: Háttérkép
                 name: backgroundimage
@@ -117,20 +118,20 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - label: Kis kép
-                    name: thumb
-                    widget: image
-                  - label: Nagy kép
                     name: img
                     widget: image
-      - file: "site/content/referenciak/_index.md"
-        label: "Referenciák"
-        name: "referenciak"
+      - file: "site/content/ovodai_f/_index.md"
+        label: "Óvodai jelek - F"
+        name: "ovodai_f"
         fields:
           - {label: Cim, name: title, widget: string}
-          - label: Galléria kategória
+          - label: Óvodai jel kategóriája
             name: galleries
             widget: list
             fields:
+              - label: Termék neve
+                name: title
+                widget: string
               - label: Háttérkép
                 name: backgroundimage
                 widget: image
@@ -139,11 +140,350 @@ collections: # A list of collections the CMS should be able to edit
                 widget: list
                 fields:
                   - label: Kis kép
-                    name: thumb
-                    widget: image
-                  - label: Nagy kép
                     name: img
                     widget: image
+      - file: "site/content/ovodai_ggy/_index.md"
+        label: "Óvodai jelek - G, Gy"
+        name: "ovodai_ggy"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_h/_index.md"
+        label: "Óvodai jelek - H"
+        name: "ovodai_h"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_i/_index.md"
+        label: "Óvodai jelek - I"
+        name: "ovodai_i"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_k/_index.md"
+        label: "Óvodai jelek - K"
+        name: "ovodai_k"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_l/_index.md"
+        label: "Óvodai jelek - L"
+        name: "ovodai_l"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image
+      - file: "site/content/ovodai_m/_index.md"
+        label: "Óvodai jelek - M"
+        name: "ovodai_m"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image  
+      - file: "site/content/ovodai_nny/_index.md"               
+        label: "Óvodai jelek - N, Ny"
+        name: "ovodai_nny"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_oo/_index.md"        
+        label: "Óvodai jelek - O, Ö"
+        name: "ovodai_oo"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_p/_index.md"
+        label: "Óvodai jelek - P"
+        name: "ovodai_p"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_r/_index.md"
+        label: "Óvodai jelek - R"
+        name: "ovodai_r"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_ssz/_index.md"
+        label: "Óvodai jelek - S, Sz"
+        name: "ovodai_ssz"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_t/_index.md"
+        label: "Óvodai jelek - T"
+        name: "ovodai_t"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_uu/_index.md"
+        label: "Óvodai jelek - U, Ü"
+        name: "ovodai_uu"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_v/_index.md"
+        label: "Óvodai jelek - V"
+        name: "ovodai_v"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/ovodai_zzs/_index.md"
+        label: "Óvodai jelek - Z, Zs"
+        name: "ovodai_zzs"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jel kategóriája
+            name: galleries
+            widget: list
+            fields:
+              - label: Termék neve
+                name: title
+                widget: string
+              - label: Háttérkép
+                name: backgroundimage
+                widget: image
+              - label: Képek
+                name: images
+                widget: list
+                fields:
+                  - label: Kis kép
+                    name: img
+                    widget: image 
+      - file: "site/content/arak/_index.md"
+        label: "Árak"
+        name: "arak"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Óvodai jelek árai
+            name: arak_text
+            widget: list
+            fields:
+              - label: Árak
+                name: arak
+                widget: string                                                                                                                                                                                                                                                                               
       - file: "site/content/ajanlatkeres/_index.md"
         label: "Árajánlatkérés"
         name: "ajanlatkeres"

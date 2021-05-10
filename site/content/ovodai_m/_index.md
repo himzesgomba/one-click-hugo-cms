@@ -54,9 +54,9 @@ galleries:
     images: 
       - img: /img/mosogep.jpg
   - title: Motor
-    backgroundimage: /img/motor.jpg
+    backgroundimage: /img/motorbicikli.jpg
     images: 
-      - img: /img/motor.jpg
+      - img: /img/motorbicikli.jpg
   - title: Mozdony
     backgroundimage: /img/mozdony.jpg
     images: 

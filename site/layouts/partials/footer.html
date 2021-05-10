@@ -1,7 +1,7 @@
 <section id="footer">
     <div class="footer container">
         <div class="logojel">
-            <img src="/img/gomba_egyszeru.png" />
+            <img src="/img/gomba_egyszeruovodai.png" />
         </div>
         <div class="social-icon">
             <div class="social-item">
@@ -28,5 +28,42 @@
 {{ $app := .Site.Data.webpack.app }} 
 {{ with $app.js }}
 <script src="{{ relURL . }}"></script>
+<script>
+    document.getElementById('ovoda').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'none';
+        document.getElementById('ovodaiselect').style.display = 'block';
+    });
+
+    document.getElementById('termek').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'block';
+        document.getElementById('ovodaiselect').style.display = 'none';
+    });
+
+    document.getElementById('sajat').addEventListener('click', function() {
+        document.getElementById('egyebselect').style.display = 'none';
+        document.getElementById('ovodaiselect').style.display = 'none';
+    });
+    $('#egyebselect').multiSelect();
+
+        /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myDrop() {
+        document.getElementById("drop_menu").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.himzes')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+</script>
 
 {{ end }}
