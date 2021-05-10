@@ -100,11 +100,11 @@ body {
     background: #0a434c;
 }
 
-.show {
+#header .dropdown.show {
     display: block;
 }
 
-/*#header ul li:active .dropdown {
+/*#header ul li:hover .dropdown {
     display: block;
     background: #0a434c;
     margin-left: 50px;
@@ -1347,7 +1347,7 @@ form h6 {
     #header .nav-list ul li {
         display: inline-block;
     }
-    /*#header ul li:active .dropdown {
+    /*#header ul li:hover .dropdown {
         display: block;
         width: 400px;
         margin-left: 0;
