@@ -78,14 +78,36 @@ body {
 
 #header .dropdown {
     display: none;
+    list-style: none;
+    z-index: 1;
+    justify-content: center;
+    margin-left: 50px;
+    background-color: #a48d64;
 }
 
-#header ul li:hover .dropdown {
+#header .dropdown.show{
     display: block;
-    background: #a48d64;
-    margin-left: 50px;
-    list-style: none;
 }
+
+#header .himzes{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    display: block;
+    background-color: #a48d64;
+    cursor: pointer;
+}
+
+#header button .himzes:hover{
+    color: #575046;
+    cursor: pointer;
+}
+/*Nem értem miért nem működik???*/
+
 
 #header ul li ul {
     list-style: none;
@@ -1141,11 +1163,16 @@ form h6 {
     #header .nav-list ul li {
         display: inline-block;
     }
-    #header ul li:hover .dropdown {
-        display: block;
+    #header .dropdown {
         width: 150px;
         margin-left: 0;
         position: absolute;
+    }
+
+    #header .himzes{
+        font-size: 0.6rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
     }
     #header .nav-list ul li a {
         font-size: 0.6rem;

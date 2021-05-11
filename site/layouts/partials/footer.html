@@ -43,5 +43,26 @@
         document.getElementById('egyebselect').style.display = 'none';
         document.getElementById('ovodaiselect').style.display = 'none';
     });
+
+       /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myDrop() {
+        console.log(42)
+        document.getElementById("drop_menu").classList.toggle("show");
+    }
+    
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.himzes')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
 </script>
 {{ end }}
