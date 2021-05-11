@@ -1013,6 +1013,19 @@ body {
     box-shadow: 1px 1px 1px black;
 }
 
+#ajanlat .thanks{
+    background-color: green;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#ajanlat .thanks .p{
+    color: white;
+}
+
+
 #ajanlat .kapcsolat{
     display: flex;
     flex-direction: column;
