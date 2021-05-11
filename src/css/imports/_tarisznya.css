@@ -35,7 +35,7 @@ body {
 }
 
 #header .brand {
-    width: 130px;
+    width: 100px;
 }
 
 #header .brand img {
@@ -1140,6 +1140,23 @@ form h6 {
     color: white;
     margin-bottom: 30px;
 }
+
+
+.ms-container .ms-selectable li.ms-elem-selectable, .ms-container .ms-selection li.ms-elem-selection .ovodaiselect {
+    border-bottom: 1px #eee solid;
+    padding: 15px 10px !important;
+    color: #555;
+    font-size: 14px;
+    overflow: hidden !important;
+}
+
+.ms-container .ms-selectable, .ms-container .ms-selection {
+    background: #fff;
+    color: #555;
+    float: left;
+    width: 100% !important;
+}
+
 /*Kapcsolat infók*/
 
 #contact .contact-header {
