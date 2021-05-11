@@ -102,11 +102,10 @@ body {
     cursor: pointer;
 }
 
-#header button .himzes:hover{
+#header .nav-list ul .himzes:hover{
     color: #575046;
     cursor: pointer;
 }
-/*Nem értem miért nem működik???*/
 
 
 #header ul li ul {
