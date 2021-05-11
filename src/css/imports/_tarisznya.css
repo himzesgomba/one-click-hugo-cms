@@ -927,14 +927,16 @@ body {
     text-transform: uppercase;
 }
 
-.contactForm .inputBox {
+.contactForm .inputBox .kerdo,
+.contactForm .inputBox .option,
+.contactForm .inputBox .opovoda {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
 .contactForm .kerdo,
-.contactForm .inputBox textarea {
+.contactForm .inputBox .munka {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -947,31 +949,29 @@ body {
     background-color: white;
 }
 
-.contactForm .inputBox span {
-    position: absolute;
+.contactForm .inputBox .szoveg {
     left: 0;
-    padding: 5px 0;
     font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #0a434c;
-    margin-left: 5px;
+    color: white;
 }
 
-.contactForm .inputBox input:focus~span,
-.contactForm .inputBox input:valid~span,
-.contactForm .inputBox textarea:focus~span,
-.contactForm .inputBox textarea:valid~span {
-    color: white;
-    font-size: 12px;
-    transform: translateY(-20px);
-}
 
 .contactForm .inputBox .ovoda,
 .contactForm .inputBox .termek,
 .contactForm .inputBox .sajat {
     margin: 3px;
+    color: white;
+}
+
+.contactForm .inputBox .ovodaselect,
+.contactForm .inputBox .egyebselect {
+    display: none;
+}
+
+.contactForm .inputBox .meret{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .contactForm .inputBox input[type="file"] {
@@ -985,26 +985,16 @@ body {
     width: 100%;
 }
 
-label {
+.contactForm .textszov {
     color: white;
     font-size: 16px;
 }
 
-form ol {
+.contactForm > ol {
     padding-left: 0;
 }
 
-/*form li,
-div>h6 {
-    background: #0a434c;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    color: white;
-    font-size: 16px;
-}*/
-
-form h6 {
+.contactForm .preview > .preview-text {
     line-height: 32px;
     padding-left: 20px;
     color: white;
@@ -1022,45 +1012,6 @@ form h6 {
     font-size: 14px;
     box-shadow: 1px 1px 1px black;
 }
-
-.contactForm .kosz p {
-    width: 100%;
-    background: #3c7c51;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px;
-    font-size: 10px;
-    text-align: center;
-    box-shadow: 1px 1px 1px black;
-}
-
-.contactForm .opovoda {
-    display: none;
-}
-
-.contactForm .option {
-    display: none;
-}
-/*#status {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-    flex-direction: row;
-}
-
-#status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-}
-
-#status.error {
-    background-color: rgb(250, 129, 92);
-    color: white;
-    animation: status 4s ease forwards;
-}*/
 
 #ajanlat .kapcsolat{
     display: flex;
@@ -1139,22 +1090,6 @@ form h6 {
     left: 37px;
     color: white;
     margin-bottom: 30px;
-}
-
-
-.ms-container .ms-selectable li.ms-elem-selectable, .ms-container .ms-selection li.ms-elem-selection .ovodaiselect {
-    border-bottom: 1px #eee solid;
-    padding: 15px 10px !important;
-    color: #555;
-    font-size: 14px;
-    overflow: hidden !important;
-}
-
-.ms-container .ms-selectable, .ms-container .ms-selection {
-    background: #fff;
-    color: #555;
-    float: left;
-    width: 100% !important;
 }
 
 /*Kapcsolat infók*/
