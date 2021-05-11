@@ -24,11 +24,15 @@
                 </div>
                 <div class="inputBox">
                     <input type="radio" class="sajat" id="sajat" name="valasztas"><label for="sajat">Saját mintát szeretnék hímeztetni</label>
+                    <br>
                     <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek">A termékek közül szeretnék választani</label>
+                    <br>
                     <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
+                    <br>
                 </div>
                 <div class="inputBox">
                     <select class="option" name="szolgaltatas" id="egyebselect" multiple>
+                        
                         <option disabled="disabled" selected="celected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
                         {{ range .Params.lehetosegek }}
                             <option>{{ .opcio }}</option>
