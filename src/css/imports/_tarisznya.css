@@ -895,14 +895,14 @@ body {
 }
 
 #ajanlat .thanks{
-    background-color: green;
+    background-color: #52872f;
     width: 100%;
     justify-content: center;
     text-align: center;
     padding: 5px;
 }
 
-#ajanlat .thanks .p{
+#ajanlat .thanks p{
     color: white;
 }
 /*#status {
