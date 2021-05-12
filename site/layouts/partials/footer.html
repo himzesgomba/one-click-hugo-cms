@@ -30,17 +30,17 @@
 {{ with $app.js }}
 <script src="{{ relURL . }}"></script>
 <script>
-    $('#ovoda').click(() => {
+    $('#ovoda, .radszoveg').click(() => {
         $('#egyebselectbox').hide();
         $('#ovodaiselectbox').show();
     });
 
-    $('#termek').click(() => {
+    $('#termek, .radszoveg').click(() => {
       $('#egyebselectbox').show();
       $('#ovodaiselectbox').hide();
     });
 
-    $('#sajat').click(() => {
+    $('#sajat, .radszoveg').click(() => {
         $('#egyebselectbox').hide();
         $('ovodaiselectbox').hide();
     });
