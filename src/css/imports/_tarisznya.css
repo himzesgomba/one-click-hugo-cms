@@ -953,6 +953,8 @@ body {
     left: 0;
     font-size: 16px;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
 
@@ -966,6 +968,11 @@ body {
 .contactForm .inputBox .ovodaselect,
 .contactForm .inputBox .egyebselect {
     display: none;
+    width: 100%;
+}
+
+.inputBox > .select2-container {
+    display: block;
 }
 
 .contactForm .inputBox .meret{

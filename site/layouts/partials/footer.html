@@ -30,29 +30,29 @@
 {{ with $app.js }}
 <script src="{{ relURL . }}"></script>
 <script>
-    document.getElementById('ovoda').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'none';
-        document.getElementById('ovodaiselect').style.display = 'block';
+    $('#ovoda').click(() => {
+        $('#egyebselectbox').hide();
+        $('#ovodaiselectbox').show();
     });
 
-    document.getElementById('termek').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'block';
-        document.getElementById('ovodaiselect').style.display = 'none';
+    $('#termek').click(() => {
+      $('#egyebselectbox').show();
+      $('#ovodaiselectbox').hide();
     });
 
-    document.getElementById('sajat').addEventListener('click', function() {
-        document.getElementById('egyebselect').style.display = 'none';
-        document.getElementById('ovodaiselect').style.display = 'none';
+    $('#sajat').click(() => {
+        $('#egyebselectbox').hide();
+        $('ovodaiselectbox').hide();
     });
     
     $(() => {
+      $('#sajat').click();
       $('#egyebselect').select2();
       $('#ovodaiselect').select2();
     });
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
     function myDrop() {
-        console.log(42)
         document.getElementById("drop_menu").classList.toggle("show");
     }
     
