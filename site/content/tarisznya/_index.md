@@ -20,7 +20,7 @@ galleries:
     backgroundimage: /img/tar_suni_cs_09.jpg
     images:
       - thumb: /img/tar_suni_cs_09.jpg
-      - img: /img/tar_suni_cs_09.jpg
+        img: /img/tar_suni_cs_09.jpg
   - title: Gyermek jele és neve, csoport neve
     price: 1200 Ft/db
     backgroundimage: /img/szivecske_lajos.jpg
