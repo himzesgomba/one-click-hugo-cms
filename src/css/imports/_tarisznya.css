@@ -1238,6 +1238,11 @@ body {
     #header .nav-list ul.active {
         left: 200px;
     }
+
+    #hero .hero {
+        padding-top: 170px;
+    }
+    
     #hero h1 {
         font-size: 1.5rem;
     }
