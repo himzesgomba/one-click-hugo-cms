@@ -2,17 +2,17 @@
 title: Óvodai jelek - M
 galleries:
   - title: Maci
-    backgroundimage: /img/kacsa.jpg
+    backgroundimage: /img/maci.jpg
     images: 
-      - img: /img/kacsa.jpg
+      - img: /img/maci.jpg
   - title: Macifejek
-    backgroundimage: /img/kakas.jpg
+    backgroundimage: /img/macifejek.jpg
     images: 
-      - img: /img/kakas.jpg
+      - img: /img/macifejek.jpg
   - title: Madár
-    backgroundimage: /img/kalap.jpg
+    backgroundimage: /img/madarka.jpg
     images: 
-      - img: /img/kalap.jpg
+      - img: /img/madarka.jpg
   - title: Madáretető
     backgroundimage: /img/madareteto.jpg
     images: 

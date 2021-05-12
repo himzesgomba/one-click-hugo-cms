@@ -28,7 +28,7 @@ galleries:
   - title: Építőkocka
     backgroundimage: /img/epitokocka.jpg
     images: 
-      - img: /img/epirokocka.jpg
+      - img: /img/epitokocka.jpg
 ---
 
   

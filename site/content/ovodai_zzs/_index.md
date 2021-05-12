@@ -5,7 +5,7 @@ galleries:
     backgroundimage: /img/zaszlo.jpg
     images: 
       - img: /img/zaszlo.jpg
-  - title: Zsirág
+  - title: Zsiráf
     backgroundimage: /img/zsiraf.jpg
     images: 
       - img: /img/zsiraf.jpg

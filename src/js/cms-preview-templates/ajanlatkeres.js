@@ -14,54 +14,57 @@ export default class AjanlatkeresPreview extends React.Component {
                 <input type="hidden" name="_next" value="/ajanlatkeres.k" />
                 <h4>Ingyenes árajánlatkérés</h4>
                 <div class="inputBox">
+                    <span class="szoveg">Teljes név</span>
                     <input type="text" class="kerdo" name="nev" required="required" />
-                    <span>Teljes név</span>
                 </div>
                 <div class="inputBox">
+                <span class="szoveg">Email-cím</span>
                     <input type="text" class="kerdo" name="email" required="required" />
-                    <span>Email-cím</span>
+                    
                 </div>
                 <div class="inputBox">
+                <span class="szoveg">Telefonszám</span>
                     <input type="text" class="kerdo" name="phone" required="required" />
-                    <span>Telefonszám</span>
+                    
                 </div>
                 <div class="inputBox">
-                    <input type="radio" class="sajat" id="sajat" name="valasztas"/><label for="sajat">Saját mintát szeretnék hímeztetni</label>
-                    <input type="radio" class="termek" id="termek" name="valasztas"/><label for="termek">A termékek közül szeretnék választani</label>
-                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"/><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
+                    <input type="radio" class="sajat" id="sajat" name="valasztas"/><label for="sajat" class="radszoveg">Saját mintát szeretnék hímeztetni</label>
+                    <input type="radio" class="termek" id="termek" name="valasztas"/><label for="termek" class="radszoveg">A termékek közül szeretnék választani</label>
+                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"/><label for="ovoda" class="radszoveg">Az óvodai jelek közül szeretnék választani</label>
                 </div>
                 <div class="inputBox">
+                <label for="ovodaiselect" class="szoveg">Egyéb termék kiválasztása...</label>
                     <select class="option" name="szolgaltatas" id="egyebselect" style={{display: "block"}} multiple>
-                        <option disabled="disabled" selected="selected"><span>Válasszon a termékek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        
                         {(entry.getIn(['data', 'lehetosegek']) || []).map((lehetoseg, i) => 
                             <option key={i}>{lehetoseg.get('opcio') }</option>)}
                     </select>
                 </div>
                 <div class="inputBox">
+                <label for="ovodaiselect" class="szoveg">Óvodai jel kiválasztása...</label>
                     <select class="opovoda" name="szolgaltatas" id="ovodaiselect" style={{display: "block"}} multiple>
-                        <option disabled="disabled" selected="selected"><span>Válasszon az óvodai jelek közül...(Tartsa lenyomva a Ctrl gombot több elem kiválasztásához) </span></option>
+                        
                         {(entry.getIn(['data', 'ovodaijelek']) || []).map((lehetoseg, i) => 
                             <option key={i}>{lehetoseg.get('opt') }</option>)}
                     </select>
                 </div>
                 <div class="inputBox">
+                <span class="szoveg">Méret</span>
                     <input type="text" class="kerdo" name="size"/>
-                    <span>Méret</span>
+                    
                 </div>
                 <div class="inputBox">
+                <span class="szoveg">Darabszám</span>
                     <input type="text" class="kerdo" name="db"/>
-                    <span>Darabszám</span>
+                    
                 </div>
                 <div class="inputBox">
-                    <label for="myFile">Hímeztetni kívánt saját kép feltöltése... (JPG, JPEG, PNG, SVG, GIF, TIF, BMP)</label>
+                    <label for="myFile" class="textszov">Hímeztetni kívánt saját kép feltöltése... (JPG, JPEG, PNG, SVG, GIF, TIF, BMP - Több kép feltöltéséhez egyszerre jelölje ki a feltölteni kívánt fájlokat)</label>
                     <input type="file" id="myFile" name="myFile" accept=".jpg, .jpeg, .png, .gif, .tif, .bmp, .svg" multiple />
                 </div>
-                <div class="preview">
-                    <h6>Nincs fájl kiválasztva</h6>
-                </div>
                 <div class="inputBox">
-                    <textarea name="ajanlat"></textarea>
-                    <span>A munka leírása...</span>
+                <span class="szoveg">A munka leírása...</span>
+                    <textarea name="ajanlat" class="munka"></textarea>
                 </div>
                 <div class="inputBox">
                     <input type="submit" class="kerdo" name="" value="Árajánlatkérés elküldése" />
