@@ -209,6 +209,7 @@ body {
     position: relative;
     z-index: 1;
     padding-top: 35px;
+    min-height: 100vh;
 }
 
 #hero .hero {
