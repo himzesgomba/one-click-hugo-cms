@@ -792,14 +792,16 @@ body {
     text-transform: uppercase;
 }
 
-.contactForm .inputBox {
+.contactForm .inputBox .kerdo,
+.contactForm .inputBox .option,
+.contactForm .inputBox .opovoda {
     position: relative;
     width: 100%;
     margin-top: 10px;
 }
 
-.contactForm .inputBox .kerdo,
-.contactForm .inputBox textarea {
+.contactForm .kerdo,
+.contactForm .inputBox .munka {
     width: 100%;
     padding: 5px 0;
     font-size: 16px;
@@ -812,31 +814,45 @@ body {
     background-color: white;
 }
 
-.contactForm .inputBox span {
-    position: absolute;
+.contactForm .inputBox .szoveg {
     left: 0;
-    padding: 5px 0;
     font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: black;
-    margin-left: 5px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 0;
 }
 
-.contactForm .inputBox input:focus~span,
-.contactForm .inputBox input:valid~span,
-.contactForm .inputBox textarea:focus~span,
-.contactForm .inputBox textarea:valid~span {
+.contactForm .inputBox .radszoveg{
+    left: 0;
+    font-size: 16px;
     color: white;
-    font-size: 12px;
-    transform: translateY(-20px);
+    padding-top: 10px;
+    padding-bottom: 0;
 }
+
 
 .contactForm .inputBox .ovoda,
 .contactForm .inputBox .termek,
 .contactForm .inputBox .sajat {
     margin: 3px;
+    color: white;
+}
+
+.contactForm .inputBox .ovodaiselect,
+.contactForm .inputBox .egyebselect {
+    display: none;
+    width: 100%;
+}
+
+
+.inputBox > .select2-container {
+    display: block;
+}
+
+.contactForm .inputBox .meret{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .contactForm .inputBox input[type="file"] {
@@ -850,26 +866,16 @@ body {
     width: 100%;
 }
 
-label {
+.contactForm .textszov {
     color: white;
     font-size: 16px;
 }
 
-form ol {
+.contactForm > ol {
     padding-left: 0;
 }
 
-form li,
-div>h6 {
-    background: #a48d64;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    color: white;
-    font-size: 16px;
-}
-
-form h6 {
+.contactForm .preview > .preview-text {
     line-height: 32px;
     padding-left: 20px;
     color: white;
@@ -878,7 +884,7 @@ form h6 {
 
 .contactForm .inputBox input[type="submit"] {
     width: 100%;
-    background: #575046;
+    background: #6a5c4a;
     color: white;
     text-transform: uppercase;
     border: none;
@@ -888,24 +894,16 @@ form h6 {
     box-shadow: 1px 1px 1px black;
 }
 
-.contactForm .kosz p {
+#ajanlat .thanks{
+    background-color: green;
     width: 100%;
-    background: #3c7c51;
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px;
-    font-size: 10px;
+    justify-content: center;
     text-align: center;
-    box-shadow: 1px 1px 1px black;
+    padding: 5px;
 }
 
-.contactForm .opovoda {
-    display: none;
-}
-
-.contactForm .option {
-    display: none;
+#ajanlat .thanks .p{
+    color: white;
 }
 /*#status {
     width: 100%;
