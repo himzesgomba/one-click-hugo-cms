@@ -216,7 +216,7 @@ body {
     height: 100vh;
     margin: 0 auto;
     padding: 0 50px;
-    padding-top: 170px;
+    padding-top: 50px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -1310,6 +1310,10 @@ body {
         background-image: url(/img/ovodai_borito.jpg);
         background-size: cover;
     }
+    #hero .hero {
+        padding-top: 170px;
+    }
+
     #hero h1 {
         font-size: 1.5rem;
     }

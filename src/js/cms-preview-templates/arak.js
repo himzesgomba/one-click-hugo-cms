@@ -30,7 +30,7 @@ export default class ArakPreview extends React.Component {
             <a href="/ajanlatkeres" type="button" style="text-decoration: none;">Árajánlatkérés!</a>
         </div>
     </div>
-</section>
+    </section>
     </div>;
   }
 }
