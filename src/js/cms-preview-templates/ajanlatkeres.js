@@ -71,7 +71,7 @@ export default class AjanlatkeresPreview extends React.Component {
         </div>
         <div class="Ajanlatinfo">
             <h1>Rendeléssel, szállítással kapcsolatos tudnivalók:</h1>
-            <h2>Ha kitölti a szükséges információkat, készítünk Önnek egy ingyenes árajánlatot, amely tartalmazza a fizetendő programköltséget és a hímzés árát, valamint a várható postaköltséget és szállítási határidőt.</h2>
+            <h2>Ha kitölti a szükséges információkat, készítünk Önnek egy ingyenes árajánlatot, amely tartalmazza az összes fizetendő költséget és a szállítási határidőt.</h2>
             <p>Ha a megrendelt hímzés darabszáma meghaladja a 200-at, a programkészítés díjtalan! Saját készítésű termékeink megvásárlása után, amennyiben nincs megelégedve a termékkel, az áru átvételétől számított nyolc munkanapon belül Ön elállhat
                 vásárlási szándékától. Ha a terméket sértetlen állapotban, saját költségén visszajuttatja címünkre, a vételárat az Ön által megjelölt módon visszatérítjük.</p>
         </div>

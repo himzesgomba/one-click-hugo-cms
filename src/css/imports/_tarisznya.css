@@ -734,6 +734,15 @@ body {
 .index-gallery>.gallery-image>.torolkozo {
     background-image: url("/img/torolkozo_legjobb.jpg");
 }
+
+.lg-sub-html h4{
+font-size: 25px !important;
+}
+
+.lg-sub-html p{
+    font-size: 20px !important;
+    }
+
 /*Ajánlatkérés*/
 
 #ajanlat {
