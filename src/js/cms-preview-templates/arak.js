@@ -17,16 +17,14 @@ export default class ArakPreview extends React.Component {
                             <p key={i}>{arak_text.get('arak') }</p>)}
         </div>
         <div class="bemutat-text">
-            <p>Óvodai csoportok számára lehetőséget biztosítunk fajtánként 1-2 db jel vásárlására is, ezesetben a jelek ára 120 Ft/db (3x3 cm).</p>
-
-            <p>A postaköltség a rendelt termékek súlyától függően 500-600 Ft.
-                Fizetés lehetséges banki átutalással (költsége az adott banktól függ), postai utalvánnyal (költsége min. 540 Ft), vagy készpénzben az áru átvételekor.
-                Utánvétes küldemény feladását a Posta drasztikus áremelése (2013.07.01.) miatt nem vállalom!</p>
+        <p>A postaköltség 20 db-ig 700 Ft, 20 db fölött 1100 Ft/küldemény (ajánlott elsőbbségi levél).
+                Fizetés előre utalással lehetséges, ehhez a pontos számlázási adatokat a megrendelés során kérjük megadni.</p>
 
 
-            <p>Szállítási határidő (a fizetési módtól függően) max. 7-10 nap.</p>
+            <p>Szállítási határidő max. 7-10 nap.</p>
 
             <p>Kereskedők kérjék egyedi árainkat!</p>
+            <p>Árainkat ÁFA nem terheli!</p>
             <a href="/ajanlatkeres" type="button" style="text-decoration: none;">Árajánlatkérés!</a>
         </div>
     </div>

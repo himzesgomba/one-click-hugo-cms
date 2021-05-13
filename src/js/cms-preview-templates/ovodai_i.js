@@ -9,7 +9,7 @@ export default class Ovodai_IPreview extends React.Component {
       <div class="references-header">
           <h2 class="section-title">Óvodai jelek - I</h2>
           <hr/>
-          <p>Esztétikus, könnyen kezelhető, jól mosható jelek, fehér selyemre hímezve, 3x3 cm-es, 5x5 cm-es és 10x10 cm-es méretben. Néhány öltéssel felvarrva egyszerűen rögzíthetők bármilyen felsőruházatra, törülközőre, ágyneműre, fésűtartóra, ballagási tarisznyára, stb.</p>
+          <p>A jelek 3x3 cm-es, 5x5 cm-es és 10x10 cm-es méretben készülnek. A fehér szatén alapanyag és a hímzőcérna poliészter, ezáltal könnyen tisztítható, színtartóssága garantált: akár 90 fokon is mosható. Vasalás max. közepes hőfokon!</p>
           <h5>Árainkat ÁFA nem terheli.</h5>
       </div>
       </section>
