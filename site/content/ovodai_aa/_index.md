@@ -1,6 +1,10 @@
 ---
 title: Óvodai jelek - A, Á
 galleries:
+  - title: Ablak
+    backgroundimage: /img/ablak.jpg
+    images: 
+      - img: /img/ablak.jpg
   - title: Ajtó
     backgroundimage: /img/ajto.jpg
     images: 
@@ -9,6 +13,14 @@ galleries:
     backgroundimage: /img/alma.jpg
     images: 
       - img: /img/alma.jpg
+  - title: Ananász
+    backgroundimage: /img/ananasz.jpg
+    images: 
+      - img: /img/ananasz.jpg
+  - title: Ásó
+    backgroundimage: /img/aso.jpg
+    images: 
+      - img: /img/aso.jpg
   - title: Asztal
     backgroundimage: /img/asztal.jpg
     images: 
@@ -21,8 +33,4 @@ galleries:
     backgroundimage: /img/auto_bogarhatu.jpg
     images: 
       - img: /img/auto_bogarhatu.jpg
-  - title: Ásó
-    backgroundimage: /img/aso.jpg
-    images: 
-      - img: /img/aso.jpg
 ---

@@ -9,6 +9,10 @@ galleries:
     backgroundimage: /img/fagyi.jpg
     images: 
       - img: /img/fagyi.jpg
+  - title: Fakanál
+    backgroundimage: /img/fakanal.jpg
+    images: 
+      - img: /img/fakanal.jpg
   - title: Falevél
     backgroundimage: /img/falevel.jpg
     images: 
@@ -45,6 +49,10 @@ galleries:
     backgroundimage: /img/funyiro.jpg
     images: 
       - img: /img/funyiro.jpg
+  - title: Fúrógép
+    backgroundimage: /img/furogep.jpg
+    images: 
+      - img: /img/furogep.jpg
 ---
 
   
