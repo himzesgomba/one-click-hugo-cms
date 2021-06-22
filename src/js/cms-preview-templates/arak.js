@@ -25,7 +25,7 @@ export default class ArakPreview extends React.Component {
 
             <p>Kereskedők kérjék egyedi árainkat!</p>
             <p>Árainkat ÁFA nem terheli!</p>
-            <a href="/ajanlatkeres" type="button" style="text-decoration: none;">Árajánlatkérés!</a>
+            <a href="/ajanlatkeres" type="button" style={{"text-decoration": "none"}}>Árajánlatkérés!</a>
         </div>
     </div>
     </section>
