@@ -151,6 +151,7 @@ ovodaijelek:
     - opt: Focilabda
     - opt: Fogkefe
     - opt: Fűnyíró
+    - opt: Fúrógép
     - opt: Gereblye
     - opt: Gitár
     - opt: Gomb
