@@ -86,9 +86,11 @@ lehetosegek:
     - opcio: Tarisznya óvoda/csoport saját logójával
     - opcio: Tarisznya hímzett virággal, évszámmal
     - opcio: Tarisznya az iskola nevével/logójával, évszámmal
-ovodaijelek: 
+ovodaijelek:
+    - opt: Ablak
     - opt: Ajtó
     - opt: Alma
+    - opt: Ananász
     - opt: Asztal
     - opt: Autó
     - opt: Autó (Bogár)
@@ -148,6 +150,7 @@ ovodaijelek:
     - opt: Focilabda
     - opt: Fogkefe
     - opt: Fűnyíró
+    - opt: Fúrógép
     - opt: Gereblye
     - opt: Gitár
     - opt: Gomb
