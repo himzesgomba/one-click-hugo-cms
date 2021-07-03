@@ -25,16 +25,15 @@
                 </div>
                 <div class="inputBox">
                     <span class="szoveg">Telefonszám</span>
-                    <input type="text" class="kerdo" name="phone" required="required">
+                    <input type="tel" class="kerdo" name="telefon" required="required">
                 </div>
                 <div class="inputBox">
                     <span class="szoveg">Számlázási/postázási cím</span>
-                    <input type="text" class="kerdo" name="nev" required="required">
+                    <input type="text" class="kerdo" name="cim" required="required">
                 </div>
                 <div class="inputBox">
-                    <input type="radio" class="sajat" id="sajat" name="valasztas"><label for="sajat" class="szoveg">Saját mintát szeretnék hímeztetni</label><br/>
-                    <input type="radio" class="termek" id="termek" name="valasztas"><label for="termek" class="szoveg">A termékek közül szeretnék választani</label><br/>
-                    <input type="radio" class="ovoda" id="ovoda" name="valasztas"><label for="ovoda" class="szoveg">Az óvodai jelek közül szeretnék választani</label><br/>
+                    <input type="radio" class="sajat" id="sajat" name="szolgaltatas_tipusa"><label for="sajat" class="szoveg">Saját mintát szeretnék hímeztetni</label><br/>
+                    <input type="radio" class="ovoda" id="ovoda" name="szolgaltatas_tipusa"><label for="ovoda" class="szoveg">Az óvodai jelek közül szeretnék választani</label><br/>
                 </div>
                 <div class="inputBox">
                     <label for="ovodaiselect" class="szoveg">Óvodai jel kiválasztása...</label>
@@ -46,19 +45,19 @@
                 </div>
                 <div class="inputBox">
                     <span class="szoveg">Méret</span>
-                    <input type="text" class="meret" name="size">
+                    <input type="text" class="meret" name="meret">
                 </div>
                 <div class="inputBox">
                     <span class="szoveg">Darabszám</span>
-                    <input type="text" class="kerdo" name="db">   
+                    <input type="text" class="kerdo" name="darabszam">   
                 </div>
                 <div class="inputBox">
                     <label for="myFile" class="textszov">Hímeztetni kívánt saját kép feltöltése... (JPG, JPEG, PNG, SVG, GIF, TIF, BMP - Több kép feltöltéséhez egyszerre jelölje ki a feltölteni kívánt fájlokat)</label>
-                    <input type="file" id="myFile" name="myFile" accept=".jpg, .jpeg, .png, .gif, .tif, .bmp, .svg" multiple>
+                    <input type="file" id="myFile" name="file-feltoltes" accept=".jpg, .jpeg, .png, .gif, .tif, .bmp, .svg" multiple>
                 </div>
                 <div class="inputBox">
                     <span class="szoveg">A munka leírása...</span>
-                    <textarea name="ajanlat" class="munka"></textarea>
+                    <textarea name="ajanlat_leirasa" class="munka"></textarea>
                 </div>
                 <div class="inputBox">
                     <input type="submit" class="kerdo" name="" value="Árajánlatkérés elküldése">
