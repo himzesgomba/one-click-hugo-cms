@@ -11,13 +11,13 @@
     </div>
     <div class="contact-container">
         <div class="contactForm">
-            <form action="https://formsubmit.co/ajanlat@himzesgomban.hu" method="POST">
+            <form action="https://formsubmit.co/ajanlat@himzesgomban.hu" method="POST" class="ajanlat">
                 <input type="hidden" name="_next" value="https://himzesgomban.hu/ajanlatkeres.k">
-                <input type="hidden" name="_subject" value="Árajánlatkérés"> 
+                <input type="hidden" name="_subject" class="subj" value="Árajánlatkérés"> 
                 <h4>Ingyenes árajánlatkérés</h4>
                 <div class="inputBox">
                     <span class="szoveg">Teljes név</span>
-                    <input type="text" class="kerdo" name="nev" required="required">
+                    <input type="text" class="kerdo" name="nev" id="nev" required="required">
                 </div>
                 <div class="inputBox">
                 <span class="szoveg">Email-cím</span>
@@ -83,5 +83,15 @@
         </div>
     </div>
 </section>
+<script>
+    var forms = document.querySelector('.ajanlat');
+    var subject = document.querySelector('.targy');
 
+    forms.onsubmit = function mySubject() {
+        var name = document.getElementById('nev').value;
+        var ertek = document.querySelector('.subj');
+
+        ertek.value = 'Ajánlatkérés - ' + name;
+    }
+</script>
 {{end}}
