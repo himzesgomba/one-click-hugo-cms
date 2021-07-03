@@ -26,6 +26,10 @@ export default class AjanlatkeresPreview extends React.Component {
                     <span>Telefonszám</span>
                 </div>
                 <div class="inputBox">
+                    <input type="text" class="kerdo" name="nev" required="required" />
+                    <span>Számlázási/postázási cím</span>
+                </div>
+                <div class="inputBox">
                     <input type="radio" class="sajat" id="sajat" name="valasztas"/><label for="sajat">Saját mintát szeretnék hímeztetni</label>
                     <input type="radio" class="termek" id="termek" name="valasztas"/><label for="termek">A termékek közül szeretnék választani</label>
                     <input type="radio" class="ovoda" id="ovoda" name="valasztas"/><label for="ovoda">Az óvodai jelek közül szeretnék választani</label>
