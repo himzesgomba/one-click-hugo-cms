@@ -482,7 +482,7 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields:
               - label: Árak
-                name: arak
+                name: title
                 widget: string                                                                                                                                                                                                                                                                               
       - file: "site/content/ajanlatkeres/_index.md"
         label: "Árajánlatkérés"
