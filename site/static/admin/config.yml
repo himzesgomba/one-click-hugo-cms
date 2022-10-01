@@ -484,7 +484,19 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - label: Árak
                 name: arak
-                widget: string                                                                                                                                                                                                                                                                               
+                widget: string
+      - file: "site/content/posta/_index.md"
+        label: "Postaköltség"
+        name: "posta"
+        fields:
+          - {label: Cim, name: title, widget: string}
+          - label: Postaköltség
+            name: posta_text
+            widget: list
+            fields:
+              - label: Postaköltség
+                name: posta
+                widget: string 
       - file: "site/content/ajanlatkeres/_index.md"
         label: "Árajánlatkérés"
         name: "ajanlatkeres"
