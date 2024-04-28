@@ -33,4 +33,8 @@ galleries:
     backgroundimage: /img/auto_bogarhatu.jpg
     images:
       - img: /img/auto_bogarhatu.jpg
+  - title: Antilop
+    backgroundimage: img/bontebok_-damaliscus_pygargus_pygargus-_-30573334994-.jpg
+    images:
+      - img: img/bontebok_-damaliscus_pygargus_pygargus-_-30573334994-.jpg
 ---
