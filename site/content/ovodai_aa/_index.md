@@ -1,7 +1,7 @@
 ---
 title: Óvodai jelek - A, Á
 galleries:
-  - title: Ablakkk
+  - title: Ablakk
     backgroundimage: /img/ablak.jpg
     images:
       - img: /img/ablak.jpg
