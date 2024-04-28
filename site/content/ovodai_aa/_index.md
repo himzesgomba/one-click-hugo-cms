@@ -2,9 +2,9 @@
 title: Óvodai jelek - A, Á
 galleries:
   - title: Ablak
-    backgroundimage: img/unnamed.jpg
+    backgroundimage: img/ablak.jpg
     images:
-      - img: img/unnamed.jpg
+      - img: img/ablak.jpg
   - title: Ajtó
     backgroundimage: /img/ajto.jpg
     images:
