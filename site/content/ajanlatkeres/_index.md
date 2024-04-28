@@ -292,6 +292,5 @@ ovodaijelek:
   - opt: Vödör (kék)
   - opt: Vödör (piros)
   - opt: Zászló
-  - opt: Antilop
   - opt: Zsiráf
 ---
