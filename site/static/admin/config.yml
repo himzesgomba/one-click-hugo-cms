@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: himzesgomba/hugo-himzes
   branch: ovodaijelek
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
